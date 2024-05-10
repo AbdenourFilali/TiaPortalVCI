@@ -1,0 +1,3252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <HeaderAuthor>OCOTECH</HeaderAuthor>
+      <HeaderFamily>Typical</HeaderFamily>
+      <HeaderName>C301.801</HeaderName>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="CFG_TST_UTYD" Datatype="Time">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Maximale transitietijd stand verandering ventilatie (transitiestatus niet bereikt)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="CFG_TST_OK_TYD" Datatype="Time">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Stabilisatietijd voor de toestand OK (bereikt)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="CFG_ONHD_TYD" Datatype="Time">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Waarschuwingstijd start automatische onderhoudstesten</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="CFG_MAX_NOK1" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Maximum aantal onbestuurbare ventilatoren voor beschikbaarheidsstatus beschikbaar</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="CFG_MAX_NOK2" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Maximum aantal onbestuurbare ventilatoren voor beschikbaarheidsstatus beperkt beschikbaar</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STU_CMD_AUT" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Groepscommando: schakel in automatisch</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STU_AUT_CMD" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Sturing ventilatie algemeen</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STU_AUT_CMD_DIR" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Sturing richting</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STU_AUT_VGV_BEV" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Vrijgave ventilator-beveiligingen onbalans en temperatuur</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STU_VGV_ONHD" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Vrijgave uitvoeren automatische onderhoudstesten</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STU_ALG_LCK_SIG" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Onderdruk alarmen</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STU_REG_CAPA" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Gewenste stand ventilatie bij sensorregeling (afkomstig van CF zichthandhaving)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STU_ENE_VGV_AAN" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Vrijgeven of verhinderen bijschakelen energieverbruikers (verlichting / ventilatie)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STU_ENE_MAX_AAN" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Maximaal toegelaten ventilatiestand</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="STU_CLUST" Datatype="&quot;C301_STU_CLUST_TYPIC&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Groepscommando met sturingen naar alle clusters van de ventilatiezone</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="VAR_PWR" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Som actueel vermogen van alle clusters</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="VAR_CAPA" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">De ingestelde ventilatiestand</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="VAR_DIR" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">De ingestelde ventilatierichting</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="CFG_CAPA_DIR1" Datatype="Array[1..8] of USInt">
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Omzetting ventilatiestand naar aantal ventilatoren, per cluster (zie verder), rijrichting</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="CFG_CAPA_DIR2" Datatype="Array[1..8] of USInt">
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Omzetting ventilatiestand naar aantal ventilatoren, per cluster (zie verder), tegenrijrichting</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="VAR_CLUST" Datatype="Array[*] of &quot;C301_VAR_CLUST_TYPIC&quot;">
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Array met alle clusters, met alle variabelen van de cluster</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="BED" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Bedieningen</MultiLanguageText>
+      </Comment>
+      <Member Name="ALG" Datatype="Struct">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Gewenste stand</MultiLanguageText>
+        </Comment>
+        <Member Name="X" Datatype="&quot;UDT_BED_ALG&quot;" />
+        <Member Name="KNOP" Datatype="Array[0..10] of &quot;UDT_BED_KNOP&quot;">
+          <AttributeList>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+          </AttributeList>
+          <Sections>
+            <Section Name="None" />
+          </Sections>
+          <Subelement Path="0">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Auto</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="1">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">0 (Uit)</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="2">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">1</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="3">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">2</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="4">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">3</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="5">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">4</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="6">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">5</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="7">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">6</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="8">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">7</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="9">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">8</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="10">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Sensorregeling</MultiLanguageText>
+            </Comment>
+          </Subelement>
+        </Member>
+      </Member>
+      <Member Name="ALG_DIR" Datatype="Struct">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Gewenste richting</MultiLanguageText>
+        </Comment>
+        <Member Name="X" Datatype="&quot;UDT_BED_ALG&quot;" />
+        <Member Name="KNOP" Datatype="Array[0..2] of &quot;UDT_BED_KNOP&quot;">
+          <AttributeList>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+          </AttributeList>
+          <Sections>
+            <Section Name="None" />
+          </Sections>
+          <Subelement Path="0">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Auto</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="1">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Rijrichting</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="2">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Tegenrij</MultiLanguageText>
+            </Comment>
+          </Subelement>
+        </Member>
+      </Member>
+      <Member Name="VGV_BEV" Datatype="Struct">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Vrijgave ventilator-beveiligingen onbalans en temperatuur</MultiLanguageText>
+        </Comment>
+        <Member Name="X" Datatype="&quot;UDT_BED_ALG&quot;" />
+        <Member Name="KNOP" Datatype="Array[0..2] of &quot;UDT_BED_KNOP&quot;">
+          <AttributeList>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+          </AttributeList>
+          <Sections>
+            <Section Name="None" />
+          </Sections>
+          <Subelement Path="0">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Auto</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="1">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Ja</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="2">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Onderdrukt</MultiLanguageText>
+            </Comment>
+          </Subelement>
+        </Member>
+      </Member>
+      <Member Name="ONHD" Datatype="Struct">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Uitvoeren automatische onderhoudstesten</MultiLanguageText>
+        </Comment>
+        <Member Name="X" Datatype="&quot;UDT_BED_ALG&quot;" />
+        <Member Name="KNOP" Datatype="Array[0..1] of &quot;UDT_BED_KNOP&quot;">
+          <AttributeList>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+          </AttributeList>
+          <Sections>
+            <Section Name="None" />
+          </Sections>
+          <Subelement Path="0">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Aan</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="1">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Uit</MultiLanguageText>
+            </Comment>
+          </Subelement>
+        </Member>
+      </Member>
+    </Member>
+    <Member Name="BED_ALG" Datatype="&quot;TYPIC_HF_BED_ALG_KNOP&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Gewenste stand</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="BED_ALG_DIR" Datatype="&quot;TYPIC_HF_BED_ALG_KNOP&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Gewenste richting</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="BED_VGV_BEV" Datatype="&quot;TYPIC_HF_BED_ALG_KNOP&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Vrijgave ventilator-beveiligingen onbalans en temperatuur</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="BED_ONHD" Datatype="&quot;TYPIC_HF_BED_ALG_KNOP&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Uitvoeren automatische onderhoudstesten</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SIG" Datatype="Struct">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Signaleringen</MultiLanguageText>
+      </Comment>
+      <Member Name="AA01" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Gewenste stand niet bereikt</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AA02" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Automatische onderhoudstesten ventilatie</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AB01" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Ventilatie niet beschikbaar</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AB02" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Ventilatie beperkt beschikbaar</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+    <Member Name="VAR" Datatype="Struct">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Variabelen</MultiLanguageText>
+      </Comment>
+      <Member Name="AUT_SWA" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De stand die de ventilatie moet handhaven als de bedieningswijze is ingesteld op automatisch</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="REG_CAPA" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De stand die de ventilatie moet handhaven als de sensorregeling actief is. Deze waarde wordt bepaald door de coordinerende functie Zichthandhaving Verkeerskoker</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="BMO" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Bedieningsmode</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AUT_DIR" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De richting die de ventilatoren op moeten blazen als de bedieningswijze is ingesteld op automatisch</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="DIR_BWA" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De werkelijke ventilatierichting</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="NIV_BWA" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Momentane ventilatieniveau (percentage)</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="NIV_AAN_BWA" Datatype="USInt">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Momentaan aantal aangeschakelde ventilatoren</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="NIV_AAN_SWA" Datatype="USInt">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Gewenst aantal aangeschakelde ventilatoren</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CAPA_MAX" Datatype="USInt">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Totaal aantal ventilatoren in de ventilatiezone</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CAPA_OK_BWA" Datatype="USInt">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Aantal beschikbare ventilatoren</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CAPA_BWA" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De totaal beschikbare ventilatiecapaciteit.</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="TST_BWA" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De status van de transitie van de langsventilatie</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="BSC" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Geeft de beschikbaarheid van de langsventilatie aan</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="VGV_SIG_VOP" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">TRUE = Signaleringen vrijgegeven voor verkeersoperator FALSE = Onderdrukt</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="ONHD_STS" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Status automatische onderhoudstesten</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="ONHD_CLUST" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Nummer van de cluster die onderhoudstesten dient uit te voeren</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="VGV_BEV" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Vrijgave ventilator-beveiligingen onbalans en temperatuur</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CAPA" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De ingestelde ventilatiestand</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="DIR" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De ingestelde ventilatierichting</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+    <Member Name="HF_TST" Datatype="&quot;TYPIC_HF_TST&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Hulpfunctie transitiestatus</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>10</MemoryReserve>
+      <Name>TYPIC_C301_BF_VEN</Name>
+      <Namespace />
+      <Number>2</Number>
+      <ProgrammingLanguage>FBD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text>Logisch Object Besturing: C301.801
+
+Het doel van de BF ventilatie is de algemene opvolging, sturing en bediening van de ventilatie van een verkeerskoker.
+</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>START</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Vrijgave en verwerking van de bedieningen (centrale en lokale bediening). De bedienwaardes worden daarna in de verdere deelfunctionaliteiten gebruikt.</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> +++  Bedieningen  +++</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalConstant" UId="21">
+      <Constant Name="Auto" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="24">
+      <Constant Name="Uit" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="30">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>2</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="31">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>3</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="33">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>3</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="34">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="35">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>4</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="36">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>4</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="37">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="38">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>5</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="39">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>5</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="40">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="41">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>6</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="42">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>6</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="43">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="44">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>7</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="45">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>7</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="46">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="47">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>8</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="48">
+      <Constant>
+        <ConstantType>USInt</ConstantType>
+        <ConstantValue>8</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="49">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="50">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>9</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="51">
+      <Constant Name="Sensorregeling" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="52">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="53">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>10</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Call UId="54">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="55">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="56">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="57">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="58">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="59">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="60">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="61">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="62">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="63">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="64">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="76">
+      <OpenCon UId="65" />
+      <NameCon UId="54" Name="en" />
+    </Wire>
+    <Wire UId="77">
+      <IdentCon UId="21" />
+      <NameCon UId="54" Name="SWA" />
+    </Wire>
+    <Wire UId="78">
+      <IdentCon UId="22" />
+      <NameCon UId="54" Name="VGV" />
+    </Wire>
+    <Wire UId="79">
+      <NameCon UId="54" Name="KNOP" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="80">
+      <OpenCon UId="66" />
+      <NameCon UId="55" Name="en" />
+    </Wire>
+    <Wire UId="81">
+      <IdentCon UId="24" />
+      <NameCon UId="55" Name="SWA" />
+    </Wire>
+    <Wire UId="82">
+      <IdentCon UId="25" />
+      <NameCon UId="55" Name="VGV" />
+    </Wire>
+    <Wire UId="83">
+      <NameCon UId="55" Name="KNOP" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="84">
+      <OpenCon UId="67" />
+      <NameCon UId="56" Name="en" />
+    </Wire>
+    <Wire UId="85">
+      <IdentCon UId="27" />
+      <NameCon UId="56" Name="SWA" />
+    </Wire>
+    <Wire UId="86">
+      <IdentCon UId="28" />
+      <NameCon UId="56" Name="VGV" />
+    </Wire>
+    <Wire UId="87">
+      <NameCon UId="56" Name="KNOP" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="88">
+      <OpenCon UId="68" />
+      <NameCon UId="57" Name="en" />
+    </Wire>
+    <Wire UId="89">
+      <IdentCon UId="30" />
+      <NameCon UId="57" Name="SWA" />
+    </Wire>
+    <Wire UId="90">
+      <IdentCon UId="31" />
+      <NameCon UId="57" Name="VGV" />
+    </Wire>
+    <Wire UId="91">
+      <NameCon UId="57" Name="KNOP" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="92">
+      <OpenCon UId="69" />
+      <NameCon UId="58" Name="en" />
+    </Wire>
+    <Wire UId="93">
+      <IdentCon UId="33" />
+      <NameCon UId="58" Name="SWA" />
+    </Wire>
+    <Wire UId="94">
+      <IdentCon UId="34" />
+      <NameCon UId="58" Name="VGV" />
+    </Wire>
+    <Wire UId="95">
+      <NameCon UId="58" Name="KNOP" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="96">
+      <OpenCon UId="70" />
+      <NameCon UId="59" Name="en" />
+    </Wire>
+    <Wire UId="97">
+      <IdentCon UId="36" />
+      <NameCon UId="59" Name="SWA" />
+    </Wire>
+    <Wire UId="98">
+      <IdentCon UId="37" />
+      <NameCon UId="59" Name="VGV" />
+    </Wire>
+    <Wire UId="99">
+      <NameCon UId="59" Name="KNOP" />
+      <IdentCon UId="38" />
+    </Wire>
+    <Wire UId="100">
+      <OpenCon UId="71" />
+      <NameCon UId="60" Name="en" />
+    </Wire>
+    <Wire UId="101">
+      <IdentCon UId="39" />
+      <NameCon UId="60" Name="SWA" />
+    </Wire>
+    <Wire UId="102">
+      <IdentCon UId="40" />
+      <NameCon UId="60" Name="VGV" />
+    </Wire>
+    <Wire UId="103">
+      <NameCon UId="60" Name="KNOP" />
+      <IdentCon UId="41" />
+    </Wire>
+    <Wire UId="104">
+      <OpenCon UId="72" />
+      <NameCon UId="61" Name="en" />
+    </Wire>
+    <Wire UId="105">
+      <IdentCon UId="42" />
+      <NameCon UId="61" Name="SWA" />
+    </Wire>
+    <Wire UId="106">
+      <IdentCon UId="43" />
+      <NameCon UId="61" Name="VGV" />
+    </Wire>
+    <Wire UId="107">
+      <NameCon UId="61" Name="KNOP" />
+      <IdentCon UId="44" />
+    </Wire>
+    <Wire UId="108">
+      <OpenCon UId="73" />
+      <NameCon UId="62" Name="en" />
+    </Wire>
+    <Wire UId="109">
+      <IdentCon UId="45" />
+      <NameCon UId="62" Name="SWA" />
+    </Wire>
+    <Wire UId="110">
+      <IdentCon UId="46" />
+      <NameCon UId="62" Name="VGV" />
+    </Wire>
+    <Wire UId="111">
+      <NameCon UId="62" Name="KNOP" />
+      <IdentCon UId="47" />
+    </Wire>
+    <Wire UId="112">
+      <OpenCon UId="74" />
+      <NameCon UId="63" Name="en" />
+    </Wire>
+    <Wire UId="113">
+      <IdentCon UId="48" />
+      <NameCon UId="63" Name="SWA" />
+    </Wire>
+    <Wire UId="114">
+      <IdentCon UId="49" />
+      <NameCon UId="63" Name="VGV" />
+    </Wire>
+    <Wire UId="115">
+      <NameCon UId="63" Name="KNOP" />
+      <IdentCon UId="50" />
+    </Wire>
+    <Wire UId="116">
+      <OpenCon UId="75" />
+      <NameCon UId="64" Name="en" />
+    </Wire>
+    <Wire UId="117">
+      <IdentCon UId="51" />
+      <NameCon UId="64" Name="SWA" />
+    </Wire>
+    <Wire UId="118">
+      <IdentCon UId="52" />
+      <NameCon UId="64" Name="VGV" />
+    </Wire>
+    <Wire UId="119">
+      <NameCon UId="64" Name="KNOP" />
+      <IdentCon UId="53" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Waardes en vrijge van de knoppen BED_ALG</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="16" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="17" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="18" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Knoppen BED_ALG(Gewenste stand)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="19" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="X" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="BED_ALG" />
+        <Component Name="SWA" />
+      </Symbol>
+    </Access>
+    <Call UId="24">
+      <CallInfo Name="TYPIC_HF_BED_ALG_KNOP" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="25">
+          <Component Name="BED_ALG" />
+        </Instance>
+        <Parameter Name="CFG_LCK_0" Section="Input" Type="Bool" />
+        <Parameter Name="CMD_RST" Section="Input" Type="Bool" />
+        <Parameter Name="RST_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_UTIJD" Section="Input" Type="Time" />
+        <Parameter Name="SWA" Section="Output" Type="USInt" />
+        <Parameter Name="BED" Section="InOut" Type="&quot;UDT_BED_ALG&quot;" />
+        <Parameter Name="BED_KNOP" Section="InOut" Type="Array[*] of &quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="32">
+      <OpenCon UId="26" />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="33">
+      <OpenCon UId="27" />
+      <NameCon UId="24" Name="CFG_LCK_0" />
+    </Wire>
+    <Wire UId="34">
+      <OpenCon UId="28" />
+      <NameCon UId="24" Name="CMD_RST" />
+    </Wire>
+    <Wire UId="35">
+      <OpenCon UId="29" />
+      <NameCon UId="24" Name="RST_SWA" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="30" />
+      <NameCon UId="24" Name="EXE_SWA" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="31" />
+      <NameCon UId="24" Name="EXE_UTIJD" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="BED" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="BED_KNOP" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="24" Name="SWA" />
+      <IdentCon UId="23" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Verwerking BED_ALG</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>BED_ALG(Gewenste stand)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="20" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalConstant" UId="21">
+      <Constant Name="Auto" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG_DIR" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="24">
+      <Constant Name="Rijrichting" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG_DIR" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="27">
+      <Constant Name="Tegenrij" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG_DIR" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Call UId="30">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="31">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="32">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="36">
+      <OpenCon UId="33" />
+      <NameCon UId="30" Name="en" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="SWA" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="22" />
+      <NameCon UId="30" Name="VGV" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="30" Name="KNOP" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="40">
+      <OpenCon UId="34" />
+      <NameCon UId="31" Name="en" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="24" />
+      <NameCon UId="31" Name="SWA" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="25" />
+      <NameCon UId="31" Name="VGV" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="31" Name="KNOP" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="44">
+      <OpenCon UId="35" />
+      <NameCon UId="32" Name="en" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="27" />
+      <NameCon UId="32" Name="SWA" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="28" />
+      <NameCon UId="32" Name="VGV" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="32" Name="KNOP" />
+      <IdentCon UId="29" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="21" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="22" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Waardes en vrijge van de knoppen BED_ALG_DIR</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="26" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Knoppen BED_ALG_DIR(Gewenste richting)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="27" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG_DIR" />
+        <Component Name="X" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG_DIR" />
+        <Component Name="KNOP" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="BED_ALG_DIR" />
+        <Component Name="SWA" />
+      </Symbol>
+    </Access>
+    <Call UId="24">
+      <CallInfo Name="TYPIC_HF_BED_ALG_KNOP" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="25">
+          <Component Name="BED_ALG_DIR" />
+        </Instance>
+        <Parameter Name="CFG_LCK_0" Section="Input" Type="Bool" />
+        <Parameter Name="CMD_RST" Section="Input" Type="Bool" />
+        <Parameter Name="RST_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_UTIJD" Section="Input" Type="Time" />
+        <Parameter Name="SWA" Section="Output" Type="USInt" />
+        <Parameter Name="BED" Section="InOut" Type="&quot;UDT_BED_ALG&quot;" />
+        <Parameter Name="BED_KNOP" Section="InOut" Type="Array[*] of &quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="32">
+      <OpenCon UId="26" />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="33">
+      <OpenCon UId="27" />
+      <NameCon UId="24" Name="CFG_LCK_0" />
+    </Wire>
+    <Wire UId="34">
+      <OpenCon UId="28" />
+      <NameCon UId="24" Name="CMD_RST" />
+    </Wire>
+    <Wire UId="35">
+      <OpenCon UId="29" />
+      <NameCon UId="24" Name="RST_SWA" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="30" />
+      <NameCon UId="24" Name="EXE_SWA" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="31" />
+      <NameCon UId="24" Name="EXE_UTIJD" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="BED" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="BED_KNOP" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="24" Name="SWA" />
+      <IdentCon UId="23" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="28" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="29" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Verwerking BED_ALG_DIR</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>BED_ALG_DIR(Gewenste richting)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalConstant" UId="21">
+      <Constant Name="Auto" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="VGV_BEV" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="24">
+      <Constant Name="Ja" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="VGV_BEV" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="27">
+      <Constant Name="Onderdrukt" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="VGV_BEV" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Call UId="30">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="31">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="32">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="36">
+      <OpenCon UId="33" />
+      <NameCon UId="30" Name="en" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="SWA" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="22" />
+      <NameCon UId="30" Name="VGV" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="30" Name="KNOP" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="40">
+      <OpenCon UId="34" />
+      <NameCon UId="31" Name="en" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="24" />
+      <NameCon UId="31" Name="SWA" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="25" />
+      <NameCon UId="31" Name="VGV" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="31" Name="KNOP" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="44">
+      <OpenCon UId="35" />
+      <NameCon UId="32" Name="en" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="27" />
+      <NameCon UId="32" Name="SWA" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="28" />
+      <NameCon UId="32" Name="VGV" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="32" Name="KNOP" />
+      <IdentCon UId="29" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="30" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="31" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Waardes en vrijge van de knoppen BED_VGV_BEV</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="32" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="33" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Knoppen BED_VGV_BEV(Vrijgave ventilator-beveiligingen “onbalans” en “temperatuur”)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="VGV_BEV" />
+        <Component Name="X" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="VGV_BEV" />
+        <Component Name="KNOP" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="BED_VGV_BEV" />
+        <Component Name="SWA" />
+      </Symbol>
+    </Access>
+    <Call UId="24">
+      <CallInfo Name="TYPIC_HF_BED_ALG_KNOP" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="25">
+          <Component Name="BED_VGV_BEV" />
+        </Instance>
+        <Parameter Name="CFG_LCK_0" Section="Input" Type="Bool" />
+        <Parameter Name="CMD_RST" Section="Input" Type="Bool" />
+        <Parameter Name="RST_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_UTIJD" Section="Input" Type="Time" />
+        <Parameter Name="SWA" Section="Output" Type="USInt" />
+        <Parameter Name="BED" Section="InOut" Type="&quot;UDT_BED_ALG&quot;" />
+        <Parameter Name="BED_KNOP" Section="InOut" Type="Array[*] of &quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="32">
+      <OpenCon UId="26" />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="33">
+      <OpenCon UId="27" />
+      <NameCon UId="24" Name="CFG_LCK_0" />
+    </Wire>
+    <Wire UId="34">
+      <OpenCon UId="28" />
+      <NameCon UId="24" Name="CMD_RST" />
+    </Wire>
+    <Wire UId="35">
+      <OpenCon UId="29" />
+      <NameCon UId="24" Name="RST_SWA" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="30" />
+      <NameCon UId="24" Name="EXE_SWA" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="31" />
+      <NameCon UId="24" Name="EXE_UTIJD" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="BED" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="BED_KNOP" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="24" Name="SWA" />
+      <IdentCon UId="23" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="36" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="37" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="38" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Verwerking BED_VGV_BEV</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="39" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="3A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>BED_VGV_BEV(Vrijgave ventilator-beveiligingen “onbalans” en “temperatuur”)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalConstant" UId="21">
+      <Constant Name="Aan" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ONHD" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="24">
+      <Constant Name="Uit" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ONHD" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Call UId="27">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="28">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <OpenCon UId="29" />
+      <NameCon UId="27" Name="en" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="27" Name="SWA" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="22" />
+      <NameCon UId="27" Name="VGV" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="27" Name="KNOP" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="35">
+      <OpenCon UId="30" />
+      <NameCon UId="28" Name="en" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="24" />
+      <NameCon UId="28" Name="SWA" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="25" />
+      <NameCon UId="28" Name="VGV" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="28" Name="KNOP" />
+      <IdentCon UId="26" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Waardes en vrijge van de knoppen BED_ONHD</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="40" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="41" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="42" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Knoppen BED_ONHD(Uitvoeren automatische onderhoudstesten)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="43" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ONHD" />
+        <Component Name="X" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ONHD" />
+        <Component Name="KNOP" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="BED_ONHD" />
+        <Component Name="SWA" />
+      </Symbol>
+    </Access>
+    <Call UId="24">
+      <CallInfo Name="TYPIC_HF_BED_ALG_KNOP" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="25">
+          <Component Name="BED_ONHD" />
+        </Instance>
+        <Parameter Name="CFG_LCK_0" Section="Input" Type="Bool" />
+        <Parameter Name="CMD_RST" Section="Input" Type="Bool" />
+        <Parameter Name="RST_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_UTIJD" Section="Input" Type="Time" />
+        <Parameter Name="SWA" Section="Output" Type="USInt" />
+        <Parameter Name="BED" Section="InOut" Type="&quot;UDT_BED_ALG&quot;" />
+        <Parameter Name="BED_KNOP" Section="InOut" Type="Array[*] of &quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="32">
+      <OpenCon UId="26" />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="33">
+      <OpenCon UId="27" />
+      <NameCon UId="24" Name="CFG_LCK_0" />
+    </Wire>
+    <Wire UId="34">
+      <OpenCon UId="28" />
+      <NameCon UId="24" Name="CMD_RST" />
+    </Wire>
+    <Wire UId="35">
+      <OpenCon UId="29" />
+      <NameCon UId="24" Name="RST_SWA" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="30" />
+      <NameCon UId="24" Name="EXE_SWA" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="31" />
+      <NameCon UId="24" Name="EXE_UTIJD" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="BED" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="BED_KNOP" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="24" Name="SWA" />
+      <IdentCon UId="23" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="44" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="45" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="46" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Verwerking BED_ONHD</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="47" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="48" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="49" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>BED_ONHD(Uitvoeren automatische onderhoudstesten)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="4A" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="4C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="4D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Bedieningsmode (Auto / Manueel ) bepalen.</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="4F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="50" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> +++  Bepalen bedieningsmode  +++</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="51" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="52" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="53" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="54" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Bepalen van de gewenste stand (0..8).</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="55" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="56" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="57" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> +++  Bepalen gewenste capaciteitsinstelling  +++</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="58" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="59" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Bepalen van de gewenste draairichting (Rijrichting / Tegenrij).</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="5C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> +++  Bepalen gewenste ventilatierichting  +++</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="5F" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="60" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="61" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="62" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Bepalen vrijgave of onderdrukken van de ventilatorbeveiligingen onbalans en temperatuur.</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="63" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="64" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="65" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> +++  Bepalen vrijgave ventilatorbeveiligingen  +++</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="66" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="67" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="68" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="69" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Bepalen van de werkelijke ventilatierichting (Rijrichting / Tegenrij / Onbepaald) aan de hand van de ventilatierichtingen van de ventilatieclusters.</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="6B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="6C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> +++  Bepalen werkelijke ventilatierichting  +++</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="6D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="70" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Verscheidene berekeningen die nodig zijn voor de functionele werking of info voor weergave via de centrale en lokale bediening, zoals het momentane ventilatieniveau, aantal beschikbare ventilatoren, beschikbare capaciteit, actueel vermogen ventilatiezone.</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="71" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="72" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="73" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> +++  Berekeningen  +++</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="74" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="75" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="76" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="77" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Transitiestatus (bereikt / niet bereikt / in transitie) bepalen.</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="78" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="79" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> +++  Bepalen transitiestatus  +++</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="7B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="HF_TST" />
+        <Component Name="OK_BWA" />
+      </Symbol>
+    </Access>
+    <Part Name="Coil" UId="23" />
+  </Parts>
+  <Wires>
+    <Wire UId="24">
+      <IdentCon UId="21" />
+      <NameCon UId="23" Name="in" />
+    </Wire>
+    <Wire UId="25">
+      <IdentCon UId="22" />
+      <NameCon UId="23" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="7C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Bepalen of de actuele stand in overeenstemming is met de gewenste stand</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="7F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="80" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="81" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Bepalen "Gewenste stand bereikt"</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="82" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="HF_TST" />
+        <Component Name="OK_BWA" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="VAR" />
+        <Component Name="TST_BWA" />
+      </Symbol>
+    </Access>
+    <Call UId="23">
+      <CallInfo Name="TYPIC_HF_TST" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="24">
+          <Component Name="HF_TST" />
+        </Instance>
+        <Parameter Name="OK_BWA" Section="Input" Type="Bool" />
+        <Parameter Name="STS_DOEL1" Section="Input" Type="USInt" />
+        <Parameter Name="STS_DOEL2" Section="Input" Type="USInt" />
+        <Parameter Name="CFG_OK_TYD" Section="Input" Type="Time" />
+        <Parameter Name="CFG_MAX_TYD" Section="Input" Type="Time" />
+        <Parameter Name="TST" Section="Output" Type="USInt" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="30">
+      <OpenCon UId="25" />
+      <NameCon UId="23" Name="en" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="21" />
+      <NameCon UId="23" Name="OK_BWA" />
+    </Wire>
+    <Wire UId="32">
+      <OpenCon UId="26" />
+      <NameCon UId="23" Name="STS_DOEL1" />
+    </Wire>
+    <Wire UId="33">
+      <OpenCon UId="27" />
+      <NameCon UId="23" Name="STS_DOEL2" />
+    </Wire>
+    <Wire UId="34">
+      <OpenCon UId="28" />
+      <NameCon UId="23" Name="CFG_OK_TYD" />
+    </Wire>
+    <Wire UId="35">
+      <OpenCon UId="29" />
+      <NameCon UId="23" Name="CFG_MAX_TYD" />
+    </Wire>
+    <Wire UId="36">
+      <NameCon UId="23" Name="TST" />
+      <IdentCon UId="22" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="83" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="84" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="85" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>De transitiestatus geeft de relatie tussen een gewenste stand (van een functionaliteit) en de actuele stand aan.</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="86" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="87" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="88" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Hulpfunctie "Transitiestatus"</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="89" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="8A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="8B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Beschikbaarheidsstatus (beschikbaar / beperkt beschikbaar / niet beschikbaar) bepalen.</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="8E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> +++  Bepalen beschikbaarheidsstatus  +++</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="90" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="IF" UId="21" />
+  <Blank UId="22" />
+  <NewLine UId="23" />
+  <Blank Num="4" UId="24" />
+  <LineComment UId="25">
+    <Text UId="26">voorwaarden "Niet beschikbaar"</Text>
+  </LineComment>
+  <NewLine UId="27" />
+  <Blank Num="4" UId="28" />
+  <Access Scope="LiteralConstant" UId="29">
+    <Constant UId="30">
+      <ConstantValue UId="32">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <NewLine UId="33" />
+  <Token Text="THEN" UId="34" />
+  <NewLine UId="35" />
+  <Blank Num="4" UId="36" />
+  <LineComment UId="37">
+    <Text UId="38">Beschikbaarheidsstatus = Niet Beschikbaar</Text>
+  </LineComment>
+  <NewLine UId="39" />
+  <Blank Num="4" UId="40" />
+  <Access Scope="LocalVariable" UId="41">
+    <Symbol UId="42">
+      <Component Name="VAR" UId="43" />
+      <Token Text="." UId="44" />
+      <Component Name="BSC" UId="45" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="46" />
+  <Blank UId="47" />
+  <Access Scope="GlobalConstant" UId="48">
+    <Constant Name="NietBeschikbaar" UId="49" />
+  </Access>
+  <Token Text=";" UId="52" />
+  <NewLine UId="53" />
+  <Token Text="ELSIF" UId="54" />
+  <NewLine UId="55" />
+  <Blank Num="4" UId="56" />
+  <LineComment UId="57">
+    <Text UId="58">voorwaarden "Beperkt beschikbaar"</Text>
+  </LineComment>
+  <NewLine UId="59" />
+  <Blank Num="4" UId="60" />
+  <Access Scope="LiteralConstant" UId="61">
+    <Constant UId="62">
+      <ConstantValue UId="64">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <NewLine UId="65" />
+  <Token Text="THEN" UId="66" />
+  <NewLine UId="67" />
+  <Blank Num="4" UId="68" />
+  <LineComment UId="69">
+    <Text UId="70">Beschikbaarheidsstatus = Beperkt Beschikbaar</Text>
+  </LineComment>
+  <NewLine UId="71" />
+  <Blank Num="4" UId="72" />
+  <Access Scope="LocalVariable" UId="73">
+    <Symbol UId="74">
+      <Component Name="VAR" UId="75" />
+      <Token Text="." UId="76" />
+      <Component Name="BSC" UId="77" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="78" />
+  <Blank UId="79" />
+  <Access Scope="GlobalConstant" UId="80">
+    <Constant Name="Beperkt" UId="81" />
+  </Access>
+  <Token Text=";" UId="84" />
+  <NewLine UId="85" />
+  <Token Text="ELSE" UId="86" />
+  <NewLine UId="87" />
+  <Blank Num="4" UId="88" />
+  <LineComment UId="89">
+    <Text UId="90">Beschikbaarheidsstatus = Beschikbaar</Text>
+  </LineComment>
+  <NewLine UId="91" />
+  <Blank Num="4" UId="92" />
+  <Access Scope="LocalVariable" UId="93">
+    <Symbol UId="94">
+      <Component Name="VAR" UId="95" />
+      <Token Text="." UId="96" />
+      <Component Name="BSC" UId="97" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="98" />
+  <Blank UId="99" />
+  <Access Scope="GlobalConstant" UId="100">
+    <Constant Name="Beschikbaar" UId="101" />
+  </Access>
+  <Token Text=";" UId="104" />
+  <NewLine UId="105" />
+  <Token Text="END_IF" UId="106" />
+  <Token Text=";" UId="107" />
+  <NewLine UId="108" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="91" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="92" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="93" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="94" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="95" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="96" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> Beschikbaarheidsstatus bepalen</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="97" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="98" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="99" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Aanmaken signaleringen.</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="9B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> +++  Signaleringen  +++</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="9E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="VAR" />
+        <Component Name="TST_BWA" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="22">
+      <Constant Name="NietBereikt" />
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="SIG" />
+        <Component Name="AA01" />
+      </Symbol>
+    </Access>
+    <Part Name="Eq" UId="24">
+      <TemplateValue Name="SrcType" Type="Type">USInt</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="25" />
+  </Parts>
+  <Wires>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="in1" />
+    </Wire>
+    <Wire UId="27">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="in2" />
+    </Wire>
+    <Wire UId="28">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="23" />
+      <NameCon UId="25" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A0" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A1" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A2" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="A3" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A4" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Signalering AA01: Gewenste stand niet bereikt</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="A5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="VAR" />
+        <Component Name="BSC" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="22">
+      <Constant Name="NietBeschikbaar" />
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="SIG" />
+        <Component Name="AB01" />
+      </Symbol>
+    </Access>
+    <Part Name="Eq" UId="24">
+      <TemplateValue Name="SrcType" Type="Type">USInt</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="25" />
+  </Parts>
+  <Wires>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="in1" />
+    </Wire>
+    <Wire UId="27">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="in2" />
+    </Wire>
+    <Wire UId="28">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="23" />
+      <NameCon UId="25" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="A6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A9" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="AA" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="AB" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Signalering AB01 : Niet Beschikbaar</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="AC" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="VAR" />
+        <Component Name="BSC" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="22">
+      <Constant Name="Beperkt" />
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="SIG" />
+        <Component Name="AB02" />
+      </Symbol>
+    </Access>
+    <Part Name="Eq" UId="24">
+      <TemplateValue Name="SrcType" Type="Type">USInt</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="25" />
+  </Parts>
+  <Wires>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="in1" />
+    </Wire>
+    <Wire UId="27">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="in2" />
+    </Wire>
+    <Wire UId="28">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="23" />
+      <NameCon UId="25" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="AD" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="AE" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="AF" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B0" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B1" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="B2" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Signalering AB02 : Beperkt Beschikbaar</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="B3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="B4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="B5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="B6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Functionaliteit waarbij iedere ventilator een voor een aangestuurd wordt ter controle van de goede werking van iedere ventilator.</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B7" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="B9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> +++  Automatische onderhoudstesten  +++</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="BA" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="BB" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="BC" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="BD" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Uitgeven van sturingen naar de ventilatieclusters.</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="BE" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="BF" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C0" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text> +++  Sturingen  +++</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="C1" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="C2" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="C3" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C4" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>Variabelen van intern scada rakvlak naar outputs copieren</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="C5" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text>EINDE</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="C8" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C9" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="CA" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text>TYPIC_C301_BF_VEN: Ventilatie verkeerskoker</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>
