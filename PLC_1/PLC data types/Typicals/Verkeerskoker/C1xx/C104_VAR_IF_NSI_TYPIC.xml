@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="BSC1" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Noodstroominstallatie beschikbaar</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="BSC2" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Noodstroominstallatie niet beschikbaar</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="BSC3" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Noodstroominstallatie beperkt beschikbaar</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ENE_TOT" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Totaal energieverbruik noodstroominstallatie</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>C104_VAR_IF_NSI_TYPIC</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>
