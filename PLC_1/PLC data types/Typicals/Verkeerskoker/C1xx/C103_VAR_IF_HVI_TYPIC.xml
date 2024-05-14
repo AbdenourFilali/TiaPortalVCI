@@ -255,7 +255,6 @@
         <MultiLanguageText Lang="nl-BE">Standmelding van elke vermogenschakelaar TOE [gesloten]</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="hihi" Datatype="Int" />
     <Member Name="BEV_OK" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
