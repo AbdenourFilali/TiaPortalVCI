@@ -15,7 +15,7 @@
         <MultiLanguageText Lang="nl-BE">Sturing ventilatie algemeené</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="CMD_DIR" Datatype="USInt">
+    <Member Name="CMD_DIR" Datatype="USIn">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
