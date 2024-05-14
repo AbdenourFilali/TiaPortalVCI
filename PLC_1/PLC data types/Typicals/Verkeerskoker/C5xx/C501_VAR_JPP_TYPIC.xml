@@ -5,49 +5,49 @@
     <AttributeList>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="None">
-    <Member Name="CMD_CAPA" Datatype="USInt">
+    <Member Name="BST" Datatype="USInt">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturing ventilatie algemeen</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Bestuurbaarheid</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="CMD_DIR" Datatype="USInt">
+    <Member Name="BSC" Datatype="USInt">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturing richting</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">NOK = Storing aanwezig die beschikbaarheid beinvloed</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="CMD_ONHD" Datatype="USInt">
+    <Member Name="PWR" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Cluster die automatische onderhoudstesten moet uitvoeren</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Actueel vermogen van het pomppaar</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="VGV_BEV" Datatype="USInt">
+    <Member Name="STS" Datatype="USInt">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Vrijgave ventilator-beveiligingen onbalans en temperatuur</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Aan = er is minstens een jockeypomp aangeschakeld Uit = alle jockeypompen zijn uit</MultiLanguageText>
       </Comment>
     </Member>
   </Section>
 </Sections></Interface>
-      <Name>C301_STU_CLUST_TYPIC</Name>
+      <Name>C501_VAR_JPP_TYPIC</Name>
       <Namespace />
     </AttributeList>
     <ObjectList>

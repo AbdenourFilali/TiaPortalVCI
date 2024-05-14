@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <HeaderAuthor>OCOTECH</HeaderAuthor>
+      <HeaderFamily>Typical</HeaderFamily>
+      <HeaderName>C215.804</HeaderName>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="STU_ALG_LCK_SIG" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Onderdruk alarmen</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Output" />
+  <Section Name="InOut">
+    <Member Name="VAR_IF_PBK" Datatype="&quot;C215_VAR_IF_PBK_TYPIC&quot;">
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Struct met alle variabelen ontvangen van de functie (IF) in de interne sturing van het intern verlicht pictogram kopdeur</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="SIG" Datatype="Struct">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Signaleringen</MultiLanguageText>
+      </Comment>
+      <Member Name="AA01" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Intern verlicht pictogram kopdeur niet observeerbaar</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AA02" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Algemene storing</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A001" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Beveiliging aangesproken</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A002" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing batterij</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+    <Member Name="VAR" Datatype="Struct">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Variabelen</MultiLanguageText>
+      </Comment>
+      <Member Name="OBS" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Observeerbaarheid</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="RNO" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Reden niet observeerbaar</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AUT" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Beveiliging aangesproken</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="VGV_SIG_VOP" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">TRUE = Signaleringen vrijgegeven voor verkeersoperator FALSE = Onderdrukt</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+    <Member Name="HF_BST_OBS" Datatype="&quot;TYPIC_HF_BST_OBS&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Hulp functie besturing</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>10</MemoryReserve>
+      <Name>TYPIC_C215_SF_PBK</Name>
+      <Namespace />
+      <Number>125</Number>
+      <ProgrammingLanguage>FBD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

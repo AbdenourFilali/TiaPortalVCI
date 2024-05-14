@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="REQ_UIT" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Aanvraag om regime Uit te activeren</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="REQ_BWK" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Aanvraag om regime Bewaken te activeren</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="REQ_BLUS1" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Aanvraag om regime Blussen Hydrant te activeren</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="REQ_BLUS2" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Aanvraag om regime Blussen Hydrant  en  WMS te activeren</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="REQ_TEST" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Aanvraag om regime Testen te activeren</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EXT_HW" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Sturings hardware (PLC) in storing</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STO" Datatype="Struct">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Opsomming van alle storingen</MultiLanguageText>
+      </Comment>
+      <Member Name="A001" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Beveiliging aangesproken</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A002" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Beveiliging No-Break aangesproken</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A003" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Schuif ALSB uitgeschakeld</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A004" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Schuif ALSB in test</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A005" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Schuif ALSB uitgereden</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A006" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Lekdetectie in pomplokaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A007" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Overspanningsbeveiliging aangesproken</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A008" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Beveiliging kastklimatisatie aangesproken</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A009" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Lastscheider niet aan</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>C501_VAR_IF_BBI_TYPIC</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

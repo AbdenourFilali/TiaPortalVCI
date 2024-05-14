@@ -5,49 +5,89 @@
     <AttributeList>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="None">
-    <Member Name="CMD_CAPA" Datatype="USInt">
+    <Member Name="MWA" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturing ventilatie algemeen</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Meetwaarde</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="CMD_DIR" Datatype="USInt">
+    <Member Name="STS_HW" Datatype="USInt">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturing richting</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Hoogwater vlotter</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="CMD_ONHD" Datatype="USInt">
+    <Member Name="STS_VHW" Datatype="USInt">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Cluster die automatische onderhoudstesten moet uitvoeren</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Voorwaarschuwing hoogwater</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="VGV_BEV" Datatype="USInt">
+    <Member Name="STS_SD" Datatype="USInt">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Vrijgave ventilator-beveiligingen onbalans en temperatuur</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Suppletie dicht</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STS_SO" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Suppletie open</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STS_VRL" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Voorwaarschuwing reservoir leeg</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STS_RL" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Reservoir leeg</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OBS" Datatype="USInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Observeerbaarheid</MultiLanguageText>
       </Comment>
     </Member>
   </Section>
 </Sections></Interface>
-      <Name>C301_STU_CLUST_TYPIC</Name>
+      <Name>C501_VAR_NME_TYPIC</Name>
       <Namespace />
     </AttributeList>
     <ObjectList>

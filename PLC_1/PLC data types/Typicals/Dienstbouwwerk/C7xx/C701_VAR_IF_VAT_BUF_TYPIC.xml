@@ -5,49 +5,39 @@
     <AttributeList>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="None">
-    <Member Name="CMD_CAPA" Datatype="USInt">
+    <Member Name="STO" Datatype="Struct">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturing ventilatie algemeen</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Opsomming van alle storingen</MultiLanguageText>
       </Comment>
-    </Member>
-    <Member Name="CMD_DIR" Datatype="USInt">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturing richting</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="CMD_ONHD" Datatype="USInt">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Cluster die automatische onderhoudstesten moet uitvoeren</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="VGV_BEV" Datatype="USInt">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Vrijgave ventilator-beveiligingen onbalans en temperatuur</MultiLanguageText>
-      </Comment>
+      <Member Name="A001" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Fout temperatuurmeting in vertrek</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A002" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Fout temperatuurmeting uit vertrek</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A003" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Fout temperatuurmeting in retour</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A004" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Fout temperatuurmeting uit retour</MultiLanguageText>
+        </Comment>
+      </Member>
     </Member>
   </Section>
 </Sections></Interface>
-      <Name>C301_STU_CLUST_TYPIC</Name>
+      <Name>C701_VAR_IF_VAT_BUF_TYPIC</Name>
       <Namespace />
     </AttributeList>
     <ObjectList>

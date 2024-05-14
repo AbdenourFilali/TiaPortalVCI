@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="EXT_AUT" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Externe (hoofd) beveiliging aangesproken</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EXT_HW" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Sturings hardware (PLC) in storing</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STO" Datatype="Struct">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Opsomming van alle storingen en meldingen</MultiLanguageText>
+      </Comment>
+      <Member Name="A001" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing algemeen luchtbehandelingssysteem</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A002" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing algemeen koelmachine</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A003" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing algemeen warmtepomp</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A004" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing brandklep gesloten</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A005" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing temperatuur besturingslokaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A006" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing algemeen besturingslokaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A007" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing temperatuur opleidings/trainer/test/pauze lokaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A008" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing algemeen opleidings/trainer/test/pauze lokaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A009" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing temperatuur vergaderzaal/kantoor</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A010" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing algemeen vergaderzaal/kantoor</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A011" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing temperatuur batterijlokaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A012" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing algemeen batterijlokaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A013" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing temperatuur astrid/gsm lokaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A014" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing algemeen astrid/gsm lokaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A015" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing temperatuur sanitaire ruimte</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A016" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing algemeen sanitaire ruimte</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT01" Datatype="Bool" />
+      <Member Name="AT02" Datatype="Bool" />
+      <Member Name="M001" Datatype="Bool" />
+      <Member Name="M002" Datatype="Bool" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>C701_VAR_IF_KMI_TYPIC</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

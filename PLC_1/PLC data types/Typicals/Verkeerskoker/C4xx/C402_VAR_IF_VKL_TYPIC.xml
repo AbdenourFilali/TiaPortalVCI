@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="STS_ROOD" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">TRUE = Verkeerslicht actueel op rood</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STS_GEEL" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">TRUE = Verkeerslicht actueel op geel (vast)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STS_GROE" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">TRUE = Verkeerslicht actueel op groen</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STS_KNIP" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">TRUE = Verkeerslicht actueel op knipperen geel</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STS_AAN" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">TRUE = Verkeerslicht wordt aangestuurd</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="BMO_HAND" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">TRUE = Verkeerslicht in hand geschakeld / FALSE = niet in hand</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EXT_AUT" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Externe (hoofd) beveiliging aangesproken</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EXT_HW" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Sturings hardware (PLC) in storing</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STO" Datatype="Struct">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Opsomming van alle signaleringen</MultiLanguageText>
+      </Comment>
+      <Member Name="A001" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Beveiliging aangesproken</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT01" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De rode lens is defect</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT02" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De gele lens is defect</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT03" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De groene lens is defect</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT04" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De stand rood kan niet getoond worden</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT05" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De stand geel kan niet getoond worden</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT06" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De stand geel knipperen kan niet getoond worden</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT07" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De stand groen kan niet getoond worden</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>C402_VAR_IF_VKL_TYPIC</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

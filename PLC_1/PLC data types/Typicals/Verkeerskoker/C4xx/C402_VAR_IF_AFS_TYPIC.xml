@@ -5,49 +5,69 @@
     <AttributeList>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="None">
-    <Member Name="CMD_CAPA" Datatype="USInt">
+    <Member Name="STS_VKL_OK" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturing ventilatie algemeen</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">TRUE = verkeerslichten op rood, vrijgave sluiten afsluitbomen</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="CMD_DIR" Datatype="USInt">
+    <Member Name="STS_VKL_AAN" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturing richting</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">TRUE = verkeerslichten aangestuurd</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="CMD_ONHD" Datatype="USInt">
+    <Member Name="STS_KST_OPEN" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Cluster die automatische onderhoudstesten moet uitvoeren</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">TRUE = deur wegkantkast geopend</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="VGV_BEV" Datatype="USInt">
+    <Member Name="STO" Datatype="Struct">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Vrijgave ventilator-beveiligingen onbalans en temperatuur</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Opsomming van alle signaleringen</MultiLanguageText>
       </Comment>
+      <Member Name="A001" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Noodstop</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A002" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing UPS</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A003" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">UPS in batterijwerking</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A004" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing klimaatregeling wegkantkast</MultiLanguageText>
+        </Comment>
+      </Member>
     </Member>
   </Section>
 </Sections></Interface>
-      <Name>C301_STU_CLUST_TYPIC</Name>
+      <Name>C402_VAR_IF_AFS_TYPIC</Name>
       <Namespace />
     </AttributeList>
     <ObjectList>

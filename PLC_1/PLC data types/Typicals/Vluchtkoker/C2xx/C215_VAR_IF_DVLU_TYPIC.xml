@@ -5,49 +5,99 @@
     <AttributeList>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="None">
-    <Member Name="CMD_CAPA" Datatype="USInt">
+    <Member Name="STS_OPL" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturing ventilatie algemeen</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Indicatiebord vluchtroute aangestuurd in oplopende richting</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="CMD_DIR" Datatype="USInt">
+    <Member Name="STS_AFL" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturing richting</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Indicatiebord vluchtroute aangestuurd in aflopende richting</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="CMD_ONHD" Datatype="USInt">
+    <Member Name="EXT_AUT" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Cluster die automatische onderhoudstesten moet uitvoeren</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Externe (hoofd) beveiliging aangesproken</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="VGV_BEV" Datatype="USInt">
+    <Member Name="EXT_HW" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Vrijgave ventilator-beveiligingen onbalans en temperatuur</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Sturings hardware (PLC) in storing</MultiLanguageText>
       </Comment>
+    </Member>
+    <Member Name="STO" Datatype="Struct">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Opsomming van alle storingen</MultiLanguageText>
+      </Comment>
+      <Member Name="A001" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Beveiliging aangesproken</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT01" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Foute terugmelding: Indicatiebord uitgestuurd, terugmelding Uit niet (of te laat) ontvangen</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT02" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Foute terugmelding: Indicatiebord niet uitgestuurd, terugmelding Uit blijft aanwezig</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT03" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Foute terugmelding: Oplopend aangestuurd, terugmelding Aan niet (of te laat) ontvangen</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT04" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Foute terugmelding: Oplopend niet aangestuurd, terugmelding Aan blijft aanwezig</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT05" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Foute terugmelding: Aflopend aangestuurd, terugmelding Aan niet (of te laat) ontvangen</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT06" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Foute terugmelding: Aflopend niet aangestuurd, terugmelding Aan blijft aanwezig</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT07" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Foute terugmeldingen: terugmeldingen oplopend en aflopend tegelijkertijd</MultiLanguageText>
+        </Comment>
+      </Member>
     </Member>
   </Section>
 </Sections></Interface>
-      <Name>C301_STU_CLUST_TYPIC</Name>
+      <Name>C215_VAR_IF_DVLU_TYPIC</Name>
       <Namespace />
     </AttributeList>
     <ObjectList>

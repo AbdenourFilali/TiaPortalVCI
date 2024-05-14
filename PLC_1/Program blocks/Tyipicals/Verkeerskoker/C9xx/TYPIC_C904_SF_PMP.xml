@@ -5,322 +5,203 @@
     <AttributeList>
       <HeaderAuthor>OCOTECH</HeaderAuthor>
       <HeaderFamily>Typical</HeaderFamily>
-      <HeaderName>C301.701</HeaderName>
+      <HeaderName>C904.803</HeaderName>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="Input">
-    <Member Name="PULS_100ms" Datatype="Bool">
+    <Member Name="CFG_PWR" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Puls, 1 PLC-cyclus hoog, 1 keer per 100 ms</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Nominaal vermogen als pomp aangeschakeld</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="PULS_1s" Datatype="Bool">
+    <Member Name="STU_CMD_AUT" Datatype="USInt">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Puls, 1 PLC-cyclus hoog, 1 keer per seconde</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Groepscommando: schakel in automatisch</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="EXT_AUT" Datatype="Bool">
+    <Member Name="STU_ALG_LCK_SIG" Datatype="USInt">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Externe (hoofd) beveiliging (1 = OK)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Onderdruk alarmen</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="EXT_HW" Datatype="Bool">
+    <Member Name="STU_ENE_VGV_AAN" Datatype="USInt">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturings hardware (PLC) bewaking (1 = OK)</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_HND" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Terugmelding aansturing via hand (hardware)</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_POS" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Terugmelding aansturing in rijrichting</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_NEG" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Terugmelding aansturing tegenrijrichting</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_AUT" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Status thermische beveiliging (1 = OK)</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_PTC" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Detectie hoge temperatuur in de motorwikkelingen (1 = OK)</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_TRL" Datatype="Word">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Detectie trillingen (onbalans)</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_SCW" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Werkschakelaar (1 = AAN)</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_STO" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Storingsmelding MCC (1 = OK)</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_STS1" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Status motorlade in (1 = Ingeschakeld )</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_STS2" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Status motorlade in test (1 = In Test)</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_STS3" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Status motorlade uitgereden (1 = Uitgereden)</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_STR1" Datatype="Real">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Analoge meting ventilator fasestroom 1</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_STR2" Datatype="Real">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Analoge meting ventilator fasestroom 2</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="IN_STR3" Datatype="Real">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Analoge meting ventilator fasestroom 3</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="CFG_2RI" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">TRUE = Ventilator kan in twee richtingen draaien (i.p.v. enkel een richting)</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="CFG_UTYD" Datatype="Time">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Omschakeltijd, tijd die nodig is om uit te bollen in een richting vooraleer de andere richting gestart mag worden.</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="CFG_TYD_FB" Datatype="Time">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Vertragingstijd storing foute terugmelding</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="CFG_TYD_TRL" Datatype="Time">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Vertragingstijd storing onbalans</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="CFG_TRL_MAX" Datatype="Real">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Hoogste waarde scalering trillingsmeting</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="CFG_TRL_MIN" Datatype="Real">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Laagste waarde scalering trillingsmeting</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="CFG_TRL_HOOG" Datatype="Real">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Schakeldrempel hoog trillingsmeting (onbalans)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Vrijgeven of verhinderen bijschakelen energieverbruikers (verlichting / ventilatie)</MultiLanguageText>
       </Comment>
     </Member>
   </Section>
   <Section Name="Output">
-    <Member Name="VAR_IF_VEN" Datatype="&quot;C301_VAR_IF_VEN_TYPIC&quot;">
+    <Member Name="VAR_PMP" Datatype="&quot;C904_VAR_PMP_TYPIC&quot;">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Struct met alle variabelen naar bovenliggende functies</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Struct met alle variabelen van de pomp</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="OUT_POS" Datatype="Bool">
+    <Member Name="STU_IF_PMP" Datatype="&quot;C904_STU_IF_PMP_TYPIC&quot;">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Aansturen contactor rijrichting</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="OUT_NEG" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Aansturen contactor tegenrij</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="OUT_RES" Datatype="Bool">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Reset van de motorlade storingen</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Struct met alle sturingen naar de functie (IF) in de interne sturing van de pomp</MultiLanguageText>
       </Comment>
     </Member>
   </Section>
   <Section Name="InOut">
-    <Member Name="STU_IF_VEN" Datatype="&quot;C301_STU_IF_VEN_TYPIC&quot;">
+    <Member Name="STU_PMP_CMD" Datatype="USInt">
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Struct met alle sturingen van de subfunctie (SF) calamiteitendoorsteek van 3B</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Sturing pomp (vanuit de basisfunctie)</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="STU_VGV_VEN_AAN" Datatype="Bool">
+    <Member Name="VAR_IF_PMP" Datatype="&quot;C904_VAR_IF_PMP_TYPIC&quot;">
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Vrijgave inschakelen</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Struct met alle variabelen van de pomp, ontvangen vanuit de interne sturing</MultiLanguageText>
       </Comment>
     </Member>
   </Section>
   <Section Name="Static">
-    <Member Name="STO" Datatype="Struct">
+    <Member Name="BED" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Bedieningen</MultiLanguageText>
+      </Comment>
+      <Member Name="ALG" Datatype="Struct">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Gewenste stand</MultiLanguageText>
+        </Comment>
+        <Member Name="X" Datatype="&quot;UDT_BED_ALG&quot;" />
+        <Member Name="KNOP" Datatype="Array[0..2] of &quot;UDT_BED_KNOP&quot;">
+          <AttributeList>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+          </AttributeList>
+          <Sections>
+            <Section Name="None" />
+          </Sections>
+          <Subelement Path="0">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">AUTO</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="1">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Aan</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="2">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Uit</MultiLanguageText>
+            </Comment>
+          </Subelement>
+        </Member>
+      </Member>
+      <Member Name="BST" Datatype="Struct">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Bestuurbaarheid</MultiLanguageText>
+        </Comment>
+        <Member Name="X" Datatype="&quot;UDT_BED_ALG&quot;" />
+        <Member Name="KNOP" Datatype="Array[0..1] of &quot;UDT_BED_KNOP&quot;">
+          <AttributeList>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+          </AttributeList>
+          <Sections>
+            <Section Name="None" />
+          </Sections>
+          <Subelement Path="0">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">InDienst</MultiLanguageText>
+            </Comment>
+          </Subelement>
+          <Subelement Path="1">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">UitDienst</MultiLanguageText>
+            </Comment>
+          </Subelement>
+        </Member>
+      </Member>
+      <Member Name="RES" Datatype="Struct">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Reset storingen</MultiLanguageText>
+        </Comment>
+        <Member Name="X" Datatype="&quot;UDT_BED_ALG&quot;" />
+        <Member Name="KNOP" Datatype="Array[0..0] of &quot;UDT_BED_KNOP&quot;">
+          <AttributeList>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+          </AttributeList>
+          <Sections>
+            <Section Name="None" />
+          </Sections>
+          <Subelement Path="0">
+            <Comment>
+              <MultiLanguageText Lang="nl-BE">Reset</MultiLanguageText>
+            </Comment>
+          </Subelement>
+        </Member>
+      </Member>
+    </Member>
+    <Member Name="BED_ALG" Datatype="&quot;TYPIC_HF_BED_ALG_KNOP&quot;">
       <AttributeList>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Storingen</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Gewenste stand</MultiLanguageText>
       </Comment>
+    </Member>
+    <Member Name="BED_BST" Datatype="&quot;TYPIC_HF_BED_ALG_KNOP&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Bestuurbaarheid</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="BED_RES" Datatype="&quot;TYPIC_HF_BED_ALG_KNOP&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Reset storingen</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SIG" Datatype="Struct">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Signaleringen</MultiLanguageText>
+      </Comment>
+      <Member Name="AA01" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Pomp niet bestuurbaar</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AA02" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing algemeen</MultiLanguageText>
+        </Comment>
+      </Member>
       <Member Name="A001" Datatype="Bool">
         <Comment>
           <MultiLanguageText Lang="nl-BE">Beveiliging aangesproken</MultiLanguageText>
@@ -328,17 +209,17 @@
       </Member>
       <Member Name="A002" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Algemene storing MCC</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Storing van de motorbeveiliging van de pomp</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A003" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Te hoge temperatuur in de wikkelingen van de motor van de ventilator</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Storing motorlade</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A004" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">De ventilator is in onbalans</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Te hoge temperatuur in de motorwikkelingen</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A005" Datatype="Bool">
@@ -358,27 +239,27 @@
       </Member>
       <Member Name="A008" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Motorlade uitgeschakeld</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Droogloop beveiliging actief: LLW vlotter bovenwater</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A009" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Motorlade in test</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Lekdetectie pomp</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A010" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Motorlade uitgereden</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Motorlade uitgeschakeld</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A011" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Draadbreuk trillingsmeting</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Motorlade in test</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A012" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Meetbereik trillingsmeting overschreden</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Motorlade uitgereden</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="AT01" Datatype="Bool">
@@ -391,14 +272,14 @@
           <MultiLanguageText Lang="nl-BE">Discordantie motor: terugmelding blijft aanwezig</MultiLanguageText>
         </Comment>
       </Member>
-      <Member Name="AT03" Datatype="Bool">
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">Discordantie motor: terugmeldingen Positief en negatief tegelijkertijd</MultiLanguageText>
-        </Comment>
-      </Member>
       <Member Name="M001" Datatype="Bool">
         <Comment>
           <MultiLanguageText Lang="nl-BE">Werkschakelaar uitgeschakeld</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="M002" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Melding: Pomp heeft te lang niet gedraaid. Periodiek onderhoud nodig</MultiLanguageText>
         </Comment>
       </Member>
     </Member>
@@ -409,114 +290,115 @@
       <Comment>
         <MultiLanguageText Lang="nl-BE">Variabelen</MultiLanguageText>
       </Comment>
-      <Member Name="STS_AAN" Datatype="Bool">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">TRUE = Ventilator is aangestuurd FALSE = Uit</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="DIR_POS" Datatype="Bool">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">TRUE = Ventilator draait in positieve richting (rijrichting)</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="DIR_NEG" Datatype="Bool">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">TRUE = Ventilator draait in negatieve richting (tegenrij)</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="BMO_HAND" Datatype="Bool">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">TRUE = Ventilator in hand geschakeld FALSE = niet in hand</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="TYD_TOT_AAN" Datatype="LInt">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
+      <Member Name="TYD_TOT_AAN_UUR" Datatype="USInt">
         <Comment>
           <MultiLanguageText Lang="nl-BE">Totaal aantal draaiuren</MultiLanguageText>
         </Comment>
       </Member>
-      <Member Name="TYD_TOT_AAN_UUR" Datatype="LInt">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">Totaal aantal draaiuren</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="ENE_MWA1" Datatype="Real">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
+      <Member Name="ENE_MWA1" Datatype="USInt">
         <Comment>
           <MultiLanguageText Lang="nl-BE">Stroommeting fase 1</MultiLanguageText>
         </Comment>
       </Member>
-      <Member Name="ENE_MWA2" Datatype="Real">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
+      <Member Name="ENE_MWA2" Datatype="USInt">
         <Comment>
           <MultiLanguageText Lang="nl-BE">Stroommeting fase 2</MultiLanguageText>
         </Comment>
       </Member>
-      <Member Name="ENE_MWA3" Datatype="Real">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
+      <Member Name="ENE_MWA3" Datatype="USInt">
         <Comment>
           <MultiLanguageText Lang="nl-BE">Stroommeting fase 3</MultiLanguageText>
         </Comment>
       </Member>
-      <Member Name="TRL_MWA" Datatype="Real">
+      <Member Name="RNB" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Reden niet bestuurbaar</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AUT" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Beveiliging aangesproken</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="VGV_SIG_VOP" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">TRUE = Signaleringen vrijgegeven voor verkeersoperator FALSE = Onderdrukt</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="STS" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Status van de pomp</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="BMO" Datatype="USInt">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Bedieningsmode</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="BST" Datatype="USInt">
         <AttributeList>
           <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
           <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         </AttributeList>
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Trillingsmeting</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Bestuurbaarheid</MultiLanguageText>
         </Comment>
       </Member>
-      <Member Name="EXT_AUT" Datatype="Bool">
+      <Member Name="LLW" Datatype="USInt">
         <AttributeList>
           <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
           <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         </AttributeList>
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Externe (hoofd) beveiliging aangesproken</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Vlotter droogloopbewaking</MultiLanguageText>
         </Comment>
       </Member>
-      <Member Name="EXT_HW" Datatype="Bool">
+      <Member Name="PWR" Datatype="Real">
         <AttributeList>
           <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
           <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         </AttributeList>
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Sturings hardware (PLC) in storing</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Actueel vermogen van de pomp</MultiLanguageText>
         </Comment>
       </Member>
+      <Member Name="TYD_TOT_AAN" Datatype="USInt">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Totaal aantal draaiuren</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="TYD_AAN" Datatype="USInt">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Tijdsduur dat pomp aangeschakeld is</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="TYD_UIT" Datatype="USInt">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Tijdsduur dat pomp uitgeschakeld is</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+    <Member Name="HF_BST_OBS" Datatype="&quot;TYPIC_HF_BST_OBS&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Hulp functie besturing</MultiLanguageText>
+      </Comment>
     </Member>
   </Section>
   <Section Name="Temp" />
@@ -524,9 +406,9 @@
 </Sections></Interface>
       <MemoryLayout>Optimized</MemoryLayout>
       <MemoryReserve>10</MemoryReserve>
-      <Name>TYPIC_C301_IF_VEN</Name>
+      <Name>TYPIC_C904_SF_PMP</Name>
       <Namespace />
-      <Number>33</Number>
+      <Number>133</Number>
       <ProgrammingLanguage>FBD</ProgrammingLanguage>
       <SetENOAutomatically>false</SetENOAutomatically>
     </AttributeList>
@@ -542,15 +424,9 @@
           <MultilingualTextItem ID="3" CompositionName="Items">
             <AttributeList>
               <Culture>nl-BE</Culture>
-              <Text>Logisch Object Besturing: C301.701
+              <Text>Logisch Object Besturing: C904.803
 
-De interne functie ventilator verzorgt de interne besturing, bewaking en fysieke aansturing van een aan/uit ventilator.
-
-Een langsventilator heeft 2 mogelijke draairichtingen:
- Rijrichting
- Tegenrij
-Een ingangsventilator heeft 1 mogelijke draairichting:
- Rijrichting
+Het doel van deze subfunctie is om de algemene sturing en bediening vanuit 3B te voorzien van een pomp behorende tot de hoofdpompinstallatie.
 </Text>
             </AttributeList>
           </MultilingualTextItem>
@@ -613,7 +489,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="E" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Inlezen van de 3 stroommetingen van iedere fase van de motor en inlezen van de trillingsmeting.</Text>
+                  <Text>Vrijgave en verwerking van de bedieningen (centrale en lokale bediening). De bedienwaardes worden daarna in de verdere deelfunctionaliteiten gebruikt.</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -629,7 +505,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="11" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text> +++  Metingen  +++</Text>
+                  <Text> +++  Bedieningen  +++</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -638,7 +514,150 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource />
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalConstant" UId="21">
+      <Constant Name="Auto" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="24">
+      <Constant Name="Aan" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalConstant" UId="27">
+      <Constant Name="Uit" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>2</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Call UId="30">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="31">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="32">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="36">
+      <OpenCon UId="33" />
+      <NameCon UId="30" Name="en" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="SWA" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="22" />
+      <NameCon UId="30" Name="VGV" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="30" Name="KNOP" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="40">
+      <OpenCon UId="34" />
+      <NameCon UId="31" Name="en" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="24" />
+      <NameCon UId="31" Name="SWA" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="25" />
+      <NameCon UId="31" Name="VGV" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="31" Name="KNOP" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="44">
+      <OpenCon UId="35" />
+      <NameCon UId="32" Name="en" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="27" />
+      <NameCon UId="32" Name="SWA" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="28" />
+      <NameCon UId="32" Name="VGV" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="32" Name="KNOP" />
+      <IdentCon UId="29" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
           <ProgrammingLanguage>FBD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -653,7 +672,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="15" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Verwerken van de storingsmeldingen (inputs).</Text>
+                  <Text>Waardes en vrijge van de knoppen BED_ALG</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -669,7 +688,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="18" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text> +++  Storingen  +++</Text>
+                  <Text>Knoppen BED_ALG(Gewenste stand)</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -680,30 +699,78 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
   <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
-      </Constant>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="X" />
+      </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="22">
       <Symbol>
-        <Component Name="STO" />
-        <Component Name="A001" />
+        <Component Name="BED" />
+        <Component Name="ALG" />
+        <Component Name="KNOP" />
       </Symbol>
     </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
-    </Part>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="BED_ALG" />
+        <Component Name="SWA" />
+      </Symbol>
+    </Access>
+    <Call UId="24">
+      <CallInfo Name="TYPIC_HF_BED_ALG_KNOP" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="25">
+          <Component Name="BED_ALG" />
+        </Instance>
+        <Parameter Name="CFG_LCK_0" Section="Input" Type="Bool" />
+        <Parameter Name="CMD_RST" Section="Input" Type="Bool" />
+        <Parameter Name="RST_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_UTIJD" Section="Input" Type="Time" />
+        <Parameter Name="SWA" Section="Output" Type="USInt" />
+        <Parameter Name="BED" Section="InOut" Type="&quot;UDT_BED_ALG&quot;" />
+        <Parameter Name="BED_KNOP" Section="InOut" Type="Array[*] of &quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="24">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
+    <Wire UId="32">
+      <OpenCon UId="26" />
+      <NameCon UId="24" Name="en" />
     </Wire>
-    <Wire UId="25">
+    <Wire UId="33">
+      <OpenCon UId="27" />
+      <NameCon UId="24" Name="CFG_LCK_0" />
+    </Wire>
+    <Wire UId="34">
+      <OpenCon UId="28" />
+      <NameCon UId="24" Name="CMD_RST" />
+    </Wire>
+    <Wire UId="35">
+      <OpenCon UId="29" />
+      <NameCon UId="24" Name="RST_SWA" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="30" />
+      <NameCon UId="24" Name="EXE_SWA" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="31" />
+      <NameCon UId="24" Name="EXE_UTIJD" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="BED" />
+    </Wire>
+    <Wire UId="39">
       <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
+      <NameCon UId="24" Name="BED_KNOP" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="24" Name="SWA" />
+      <IdentCon UId="23" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -721,7 +788,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="1C" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>Verwerking BED_ALG</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -737,7 +804,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="1F" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A001: Beveiliging aangesproken</Text>
+                  <Text>BED_ALG(Gewenste stand)</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -748,30 +815,99 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
   <Parts>
-    <Access Scope="LiteralConstant" UId="21">
+    <Access Scope="GlobalConstant" UId="21">
+      <Constant Name="InDienst" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
       <Constant>
         <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
+        <ConstantValue>true</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="LocalVariable" UId="22">
+    <Access Scope="LocalVariable" UId="23">
       <Symbol>
-        <Component Name="STO" />
-        <Component Name="A002" />
+        <Component Name="BED" />
+        <Component Name="BST" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
       </Symbol>
     </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
-    </Part>
+    <Access Scope="GlobalConstant" UId="24">
+      <Constant Name="UitDienst" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="BST" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>1</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
+      </Symbol>
+    </Access>
+    <Call UId="27">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="28">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="24">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
+    <Wire UId="31">
+      <OpenCon UId="29" />
+      <NameCon UId="27" Name="en" />
     </Wire>
-    <Wire UId="25">
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="27" Name="SWA" />
+    </Wire>
+    <Wire UId="33">
       <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
+      <NameCon UId="27" Name="VGV" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="27" Name="KNOP" />
+      <IdentCon UId="23" />
+    </Wire>
+    <Wire UId="35">
+      <OpenCon UId="30" />
+      <NameCon UId="28" Name="en" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="24" />
+      <NameCon UId="28" Name="SWA" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="25" />
+      <NameCon UId="28" Name="VGV" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="28" Name="KNOP" />
+      <IdentCon UId="26" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -789,7 +925,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="23" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>Waardes en vrijge van de knoppen BED_BST</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -805,7 +941,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="26" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A002: Algemene storing MCC</Text>
+                  <Text>Knoppen BED_BST(Bestuurbaarheid)</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -816,30 +952,78 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
   <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
-      </Constant>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="BST" />
+        <Component Name="X" />
+      </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="22">
       <Symbol>
-        <Component Name="STO" />
-        <Component Name="A003" />
+        <Component Name="BED" />
+        <Component Name="BST" />
+        <Component Name="KNOP" />
       </Symbol>
     </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
-    </Part>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="BED_BST" />
+        <Component Name="SWA" />
+      </Symbol>
+    </Access>
+    <Call UId="24">
+      <CallInfo Name="TYPIC_HF_BED_ALG_KNOP" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="25">
+          <Component Name="BED_BST" />
+        </Instance>
+        <Parameter Name="CFG_LCK_0" Section="Input" Type="Bool" />
+        <Parameter Name="CMD_RST" Section="Input" Type="Bool" />
+        <Parameter Name="RST_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_UTIJD" Section="Input" Type="Time" />
+        <Parameter Name="SWA" Section="Output" Type="USInt" />
+        <Parameter Name="BED" Section="InOut" Type="&quot;UDT_BED_ALG&quot;" />
+        <Parameter Name="BED_KNOP" Section="InOut" Type="Array[*] of &quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="24">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
+    <Wire UId="32">
+      <OpenCon UId="26" />
+      <NameCon UId="24" Name="en" />
     </Wire>
-    <Wire UId="25">
+    <Wire UId="33">
+      <OpenCon UId="27" />
+      <NameCon UId="24" Name="CFG_LCK_0" />
+    </Wire>
+    <Wire UId="34">
+      <OpenCon UId="28" />
+      <NameCon UId="24" Name="CMD_RST" />
+    </Wire>
+    <Wire UId="35">
+      <OpenCon UId="29" />
+      <NameCon UId="24" Name="RST_SWA" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="30" />
+      <NameCon UId="24" Name="EXE_SWA" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="31" />
+      <NameCon UId="24" Name="EXE_UTIJD" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="BED" />
+    </Wire>
+    <Wire UId="39">
       <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
+      <NameCon UId="24" Name="BED_KNOP" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="24" Name="SWA" />
+      <IdentCon UId="23" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -857,7 +1041,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="2A" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>Verwerking BED_BST</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -873,7 +1057,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="2D" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A003: Te hoge temperatuur in de wikkelingen van de motor van de ventilator</Text>
+                  <Text>BED_BST(Bestuurbaarheid)</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -884,30 +1068,53 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
   <Parts>
-    <Access Scope="LiteralConstant" UId="21">
+    <Access Scope="GlobalConstant" UId="21">
+      <Constant Name="Reset" />
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
       <Constant>
         <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
+        <ConstantValue>true</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="LocalVariable" UId="22">
+    <Access Scope="LocalVariable" UId="23">
       <Symbol>
-        <Component Name="STO" />
-        <Component Name="A004" />
+        <Component Name="BED" />
+        <Component Name="RES" />
+        <Component Name="KNOP" AccessModifier="Array">
+          <Access Scope="LiteralConstant">
+            <Constant>
+              <ConstantType>DInt</ConstantType>
+              <ConstantValue>0</ConstantValue>
+            </Constant>
+          </Access>
+        </Component>
       </Symbol>
     </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
-    </Part>
+    <Call UId="24">
+      <CallInfo Name="TYPIC_HF_BED_KNOP" BlockType="FC">
+        <Parameter Name="SWA" Section="Input" Type="USInt" />
+        <Parameter Name="VGV" Section="Input" Type="Bool" />
+        <Parameter Name="KNOP" Section="Output" Type="&quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="24">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
+    <Wire UId="26">
+      <OpenCon UId="25" />
+      <NameCon UId="24" Name="en" />
     </Wire>
-    <Wire UId="25">
+    <Wire UId="27">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="SWA" />
+    </Wire>
+    <Wire UId="28">
       <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
+      <NameCon UId="24" Name="VGV" />
+    </Wire>
+    <Wire UId="29">
+      <NameCon UId="24" Name="KNOP" />
+      <IdentCon UId="23" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -925,7 +1132,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="31" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>Waardes en vrijge van de knoppen BED_RES</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -941,7 +1148,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="34" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A004: De ventilator is in onbalans</Text>
+                  <Text>Knoppen BED_RES(Reset storingen)</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -952,30 +1159,78 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
   <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
-      </Constant>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="BED" />
+        <Component Name="RES" />
+        <Component Name="X" />
+      </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="22">
       <Symbol>
-        <Component Name="STO" />
-        <Component Name="A005" />
+        <Component Name="BED" />
+        <Component Name="RES" />
+        <Component Name="KNOP" />
       </Symbol>
     </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
-    </Part>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="BED_RES" />
+        <Component Name="SWA" />
+      </Symbol>
+    </Access>
+    <Call UId="24">
+      <CallInfo Name="TYPIC_HF_BED_ALG_KNOP" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="25">
+          <Component Name="BED_RES" />
+        </Instance>
+        <Parameter Name="CFG_LCK_0" Section="Input" Type="Bool" />
+        <Parameter Name="CMD_RST" Section="Input" Type="Bool" />
+        <Parameter Name="RST_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_SWA" Section="Input" Type="USInt" />
+        <Parameter Name="EXE_UTIJD" Section="Input" Type="Time" />
+        <Parameter Name="SWA" Section="Output" Type="USInt" />
+        <Parameter Name="BED" Section="InOut" Type="&quot;UDT_BED_ALG&quot;" />
+        <Parameter Name="BED_KNOP" Section="InOut" Type="Array[*] of &quot;UDT_BED_KNOP&quot;" />
+      </CallInfo>
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="24">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
+    <Wire UId="32">
+      <OpenCon UId="26" />
+      <NameCon UId="24" Name="en" />
     </Wire>
-    <Wire UId="25">
+    <Wire UId="33">
+      <OpenCon UId="27" />
+      <NameCon UId="24" Name="CFG_LCK_0" />
+    </Wire>
+    <Wire UId="34">
+      <OpenCon UId="28" />
+      <NameCon UId="24" Name="CMD_RST" />
+    </Wire>
+    <Wire UId="35">
+      <OpenCon UId="29" />
+      <NameCon UId="24" Name="RST_SWA" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="30" />
+      <NameCon UId="24" Name="EXE_SWA" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="31" />
+      <NameCon UId="24" Name="EXE_UTIJD" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="BED" />
+    </Wire>
+    <Wire UId="39">
       <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
+      <NameCon UId="24" Name="BED_KNOP" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="24" Name="SWA" />
+      <IdentCon UId="23" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -993,7 +1248,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="38" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>Verwerking BED_RES</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1009,7 +1264,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="3B" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A005: Fout stroommeting fase 1</Text>
+                  <Text>BED_RES(Reset storingen)</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1018,35 +1273,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="3C" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
-  <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
-      </Constant>
-    </Access>
-    <Access Scope="LocalVariable" UId="22">
-      <Symbol>
-        <Component Name="STO" />
-        <Component Name="A006" />
-      </Symbol>
-    </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
-    </Part>
-  </Parts>
-  <Wires>
-    <Wire UId="24">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
-    </Wire>
-    <Wire UId="25">
-      <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
-    </Wire>
-  </Wires>
-</FlgNet></NetworkSource>
+          <NetworkSource />
           <ProgrammingLanguage>FBD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -1061,7 +1288,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="3F" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>Bedieningsmode (Auto / Manueel / Hand) bepalen.</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1077,7 +1304,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="42" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A006: Fout stroommeting fase 2</Text>
+                  <Text> +++  Bepalen bedieningsmode  +++</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1086,35 +1313,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="43" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
-  <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
-      </Constant>
-    </Access>
-    <Access Scope="LocalVariable" UId="22">
-      <Symbol>
-        <Component Name="STO" />
-        <Component Name="A007" />
-      </Symbol>
-    </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
-    </Part>
-  </Parts>
-  <Wires>
-    <Wire UId="24">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
-    </Wire>
-    <Wire UId="25">
-      <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
-    </Wire>
-  </Wires>
-</FlgNet></NetworkSource>
+          <NetworkSource />
           <ProgrammingLanguage>FBD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -1129,7 +1328,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="46" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>Aanmaken signaleringen, bepalen bestuurbaarheid (bestuurbaar / niet bestuurbaar) en bepalen reden van niet bestuurbaarheid.</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1145,7 +1344,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="49" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A007: Fout stroommeting fase 3</Text>
+                  <Text> +++  Signaleringen en bestuurbaarheid  +++</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1156,30 +1355,45 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
   <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
-      </Constant>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="SIG" />
+        <Component Name="A002" />
+      </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="22">
       <Symbol>
-        <Component Name="STO" />
-        <Component Name="A008" />
+        <Component Name="SIG" />
+        <Component Name="A003" />
       </Symbol>
     </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="HF_BST_OBS" />
+        <Component Name="STO_NOK" />
+      </Symbol>
+    </Access>
+    <Part Name="O" UId="24">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
     </Part>
+    <Part Name="Coil" UId="25" />
   </Parts>
   <Wires>
-    <Wire UId="24">
+    <Wire UId="26">
       <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
+      <NameCon UId="24" Name="in1" />
     </Wire>
-    <Wire UId="25">
+    <Wire UId="27">
       <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
+      <NameCon UId="24" Name="in2" />
+    </Wire>
+    <Wire UId="28">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="23" />
+      <NameCon UId="25" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -1197,7 +1411,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="4D" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>OR-verknoping van alle storingen om input STO_BST_NOK van de hulpfunctie "Bestuurbaarheid en algemene signlaring"</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1213,7 +1427,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="50" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A008: Motorlade uitgeschakeld</Text>
+                  <Text>Storing aanwezig die onbestuurbaarheid tot gevolg heeft</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1224,30 +1438,45 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
   <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
-      </Constant>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="SIG" />
+        <Component Name="A002" />
+      </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="22">
       <Symbol>
-        <Component Name="STO" />
-        <Component Name="A009" />
+        <Component Name="SIG" />
+        <Component Name="A003" />
       </Symbol>
     </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="HF_BST_OBS" />
+        <Component Name="STO_OK" />
+      </Symbol>
+    </Access>
+    <Part Name="O" UId="24">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
     </Part>
+    <Part Name="Coil" UId="25" />
   </Parts>
   <Wires>
-    <Wire UId="24">
+    <Wire UId="26">
       <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
+      <NameCon UId="24" Name="in1" />
     </Wire>
-    <Wire UId="25">
+    <Wire UId="27">
       <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
+      <NameCon UId="24" Name="in2" />
+    </Wire>
+    <Wire UId="28">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="23" />
+      <NameCon UId="25" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -1265,7 +1494,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="54" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>OR-verknoping van alle storingen om input STO_BST_OK van de hulpfunctie "Bestuurbaarheid en algemene signlaring" </Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1281,7 +1510,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="57" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A009: Motorlade in test</Text>
+                  <Text>Storing Aanwezig</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1292,30 +1521,132 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
   <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
-      </Constant>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="HF_BST_OBS" />
+        <Component Name="STO_NOK" />
+      </Symbol>
     </Access>
     <Access Scope="LocalVariable" UId="22">
       <Symbol>
-        <Component Name="STO" />
-        <Component Name="A010" />
+        <Component Name="HF_BST_OBS" />
+        <Component Name="STO_OK" />
       </Symbol>
     </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
-    </Part>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="SIG" />
+        <Component Name="M001" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="BED_BST" />
+        <Component Name="SWA" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="VAR" />
+        <Component Name="BMO" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="SIG" />
+        <Component Name="AA01" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="SIG" />
+        <Component Name="AA02" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="VAR" />
+        <Component Name="BST" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="VAR" />
+        <Component Name="RNB" />
+      </Symbol>
+    </Access>
+    <Call UId="30">
+      <CallInfo Name="TYPIC_HF_BST_OBS" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="31">
+          <Component Name="HF_BST_OBS" />
+        </Instance>
+        <Parameter Name="STO_NOK" Section="Input" Type="Bool" />
+        <Parameter Name="STO_OK" Section="Input" Type="Bool" />
+        <Parameter Name="SCW_NOK" Section="Input" Type="Bool" />
+        <Parameter Name="NDS_NOK" Section="Input" Type="Bool" />
+        <Parameter Name="EXT_NDS_NOK" Section="Input" Type="Bool" />
+        <Parameter Name="EXT_VWA_NOK" Section="Input" Type="Bool" />
+        <Parameter Name="UIT_DIENST" Section="Input" Type="USInt" />
+        <Parameter Name="BMO" Section="Input" Type="USInt" />
+        <Parameter Name="SIG_NOK" Section="Output" Type="Bool" />
+        <Parameter Name="SIG_OK" Section="Output" Type="Bool" />
+        <Parameter Name="BST_OBS" Section="Output" Type="USInt" />
+        <Parameter Name="RNB_RNO" Section="Output" Type="Byte" />
+      </CallInfo>
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="24">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
+    <Wire UId="36">
+      <OpenCon UId="32" />
+      <NameCon UId="30" Name="en" />
     </Wire>
-    <Wire UId="25">
+    <Wire UId="37">
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="STO_NOK" />
+    </Wire>
+    <Wire UId="38">
       <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
+      <NameCon UId="30" Name="STO_OK" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="23" />
+      <NameCon UId="30" Name="SCW_NOK" />
+    </Wire>
+    <Wire UId="40">
+      <OpenCon UId="33" />
+      <NameCon UId="30" Name="NDS_NOK" />
+    </Wire>
+    <Wire UId="41">
+      <OpenCon UId="34" />
+      <NameCon UId="30" Name="EXT_NDS_NOK" />
+    </Wire>
+    <Wire UId="42">
+      <OpenCon UId="35" />
+      <NameCon UId="30" Name="EXT_VWA_NOK" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="30" Name="UIT_DIENST" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="30" Name="BMO" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="30" Name="SIG_NOK" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="30" Name="SIG_OK" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="30" Name="BST_OBS" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="30" Name="RNB_RNO" />
+      <IdentCon UId="29" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -1333,7 +1664,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="5B" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>Bepalen variabele "bestuurbaarheid" en "reden niet bestuurbaar", Signaleringen "bestuurbaarheid" en "algmene storing".</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1349,7 +1680,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="5E" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A010: Motorlade uitgereden</Text>
+                  <Text>Hulpfunctie "Bestuurbaarheid en algemene signalering " </Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1360,30 +1691,48 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
   <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
-      </Constant>
-    </Access>
-    <Access Scope="LocalVariable" UId="22">
+    <Access Scope="LocalVariable" UId="21">
       <Symbol>
-        <Component Name="STO" />
-        <Component Name="A011" />
+        <Component Name="SIG" />
+        <Component Name="AA01" />
       </Symbol>
     </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
+    <Access Scope="GlobalConstant" UId="22">
+      <Constant Name="Nee" />
+    </Access>
+    <Access Scope="GlobalConstant" UId="23">
+      <Constant Name="Ja" />
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="VAR" />
+        <Component Name="AUT" />
+      </Symbol>
+    </Access>
+    <Part Name="SEL" Version="1.4" UId="25">
+      <TemplateValue Name="value_type" Type="Type">USInt</TemplateValue>
     </Part>
   </Parts>
   <Wires>
-    <Wire UId="24">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
+    <Wire UId="27">
+      <OpenCon UId="26" />
+      <NameCon UId="25" Name="en" />
     </Wire>
-    <Wire UId="25">
+    <Wire UId="28">
+      <IdentCon UId="21" />
+      <NameCon UId="25" Name="G" />
+    </Wire>
+    <Wire UId="29">
       <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
+      <NameCon UId="25" Name="IN0" />
+    </Wire>
+    <Wire UId="30">
+      <IdentCon UId="23" />
+      <NameCon UId="25" Name="IN1" />
+    </Wire>
+    <Wire UId="31">
+      <NameCon UId="25" Name="OUT" />
+      <IdentCon UId="24" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -1401,7 +1750,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="62" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>De variabele VAR_AUT geef aan of er een beveilliging aangesproken is. Deze variabele laat toe dat de verkeersoperator op SCADA kan zien of er een beveilliging aangesproken is voor deze component.</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1417,7 +1766,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="65" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A011: Draadbreuk trillingsmeting</Text>
+                  <Text>Variabele "Beveiliging aangesproken"</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1428,30 +1777,41 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
         <AttributeList>
           <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
   <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
-      </Constant>
-    </Access>
-    <Access Scope="LocalVariable" UId="22">
+    <Access Scope="LocalVariable" UId="21">
       <Symbol>
-        <Component Name="STO" />
-        <Component Name="A012" />
+        <Component Name="STU_ALG_LCK_SIG" />
       </Symbol>
     </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
+    <Access Scope="GlobalConstant" UId="22">
+      <Constant Name="Nee" />
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="VAR" />
+        <Component Name="VGV_SIG_VOP" />
+      </Symbol>
+    </Access>
+    <Part Name="Eq" UId="24">
+      <TemplateValue Name="SrcType" Type="Type">USInt</TemplateValue>
     </Part>
+    <Part Name="Coil" UId="25" />
   </Parts>
   <Wires>
-    <Wire UId="24">
+    <Wire UId="26">
       <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
+      <NameCon UId="24" Name="in1" />
     </Wire>
-    <Wire UId="25">
+    <Wire UId="27">
       <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
+      <NameCon UId="24" Name="in2" />
+    </Wire>
+    <Wire UId="28">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="23" />
+      <NameCon UId="25" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -1469,7 +1829,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="69" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>Via de variabele VGV_SIG_VOP wordt aan IRIS SCADA doorgegeven of signaleringen (bestemd voor de verkeersoperator) van de deze functie zichtbaar (of onderdrukt) moeten zijn.</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1485,7 +1845,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="6C" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A012: Meetbereik trillingsmeting overschreden</Text>
+                  <Text>Onderdrukken signaleringen voor verkeersoperator</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1494,35 +1854,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="6D" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
-  <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
-      </Constant>
-    </Access>
-    <Access Scope="LocalVariable" UId="22">
-      <Symbol>
-        <Component Name="STO" />
-        <Component Name="M001" />
-      </Symbol>
-    </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
-    </Part>
-  </Parts>
-  <Wires>
-    <Wire UId="24">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
-    </Wire>
-    <Wire UId="25">
-      <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
-    </Wire>
-  </Wires>
-</FlgNet></NetworkSource>
+          <NetworkSource />
           <ProgrammingLanguage>FBD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -1537,7 +1869,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="70" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>Status (Aan / Uit) en actueel verbruikt vermogen bepalen.</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1553,7 +1885,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="73" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Melding M001: Werkschakelaar uitgeschakeld </Text>
+                  <Text> +++  Bepalen status en actueel vermogen  +++</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1577,7 +1909,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="77" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Aansturen en bewaking van de motor.</Text>
+                  <Text>Totaal aantal draaiuren, momentaan aantal draaiuren (actueel aantal uren dat pomp draait / actueel aantal uren dat pomp stilstaat) en fasestromen bepalen.</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1593,7 +1925,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="7A" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text> +++  Motorsturing  +++</Text>
+                  <Text> +++  Draaiuren en fasestromen  +++</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1617,7 +1949,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="7E" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Tellen van de tijdsduur dat motor draait of stilstaat.</Text>
+                  <Text>Commandos naar de interne sturing van de pomp uitsturen.</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1633,7 +1965,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="81" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text> +++  Urentellers  +++</Text>
+                  <Text> +++  Sturingen  +++</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1645,9 +1977,9 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
           <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
   <Access Scope="LocalVariable" UId="21">
     <Symbol UId="22">
-      <Component Name="VAR_IF_VEN" UId="23" />
+      <Component Name="VAR_PMP" UId="23" />
       <Token Text="." UId="24" />
-      <Component Name="STS_AAN" UId="25" />
+      <Component Name="STS" UId="25" />
     </Symbol>
   </Access>
   <Blank UId="26" />
@@ -1657,16 +1989,16 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
     <Symbol UId="30">
       <Component Name="VAR" UId="31" />
       <Token Text="." UId="32" />
-      <Component Name="STS_AAN" UId="33" />
+      <Component Name="STS" UId="33" />
     </Symbol>
   </Access>
   <Token Text=";" UId="34" />
   <NewLine UId="35" />
   <Access Scope="LocalVariable" UId="36">
     <Symbol UId="37">
-      <Component Name="VAR_IF_VEN" UId="38" />
+      <Component Name="VAR_PMP" UId="38" />
       <Token Text="." UId="39" />
-      <Component Name="DIR_POS" UId="40" />
+      <Component Name="BMO" UId="40" />
     </Symbol>
   </Access>
   <Blank UId="41" />
@@ -1676,16 +2008,16 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
     <Symbol UId="45">
       <Component Name="VAR" UId="46" />
       <Token Text="." UId="47" />
-      <Component Name="DIR_POS" UId="48" />
+      <Component Name="BMO" UId="48" />
     </Symbol>
   </Access>
   <Token Text=";" UId="49" />
   <NewLine UId="50" />
   <Access Scope="LocalVariable" UId="51">
     <Symbol UId="52">
-      <Component Name="VAR_IF_VEN" UId="53" />
+      <Component Name="VAR_PMP" UId="53" />
       <Token Text="." UId="54" />
-      <Component Name="DIR_NEG" UId="55" />
+      <Component Name="BST" UId="55" />
     </Symbol>
   </Access>
   <Blank UId="56" />
@@ -1695,16 +2027,16 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
     <Symbol UId="60">
       <Component Name="VAR" UId="61" />
       <Token Text="." UId="62" />
-      <Component Name="DIR_NEG" UId="63" />
+      <Component Name="BST" UId="63" />
     </Symbol>
   </Access>
   <Token Text=";" UId="64" />
   <NewLine UId="65" />
   <Access Scope="LocalVariable" UId="66">
     <Symbol UId="67">
-      <Component Name="VAR_IF_VEN" UId="68" />
+      <Component Name="VAR_PMP" UId="68" />
       <Token Text="." UId="69" />
-      <Component Name="BMO_HAND" UId="70" />
+      <Component Name="LLW" UId="70" />
     </Symbol>
   </Access>
   <Blank UId="71" />
@@ -1714,16 +2046,16 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
     <Symbol UId="75">
       <Component Name="VAR" UId="76" />
       <Token Text="." UId="77" />
-      <Component Name="BMO_HAND" UId="78" />
+      <Component Name="LLW" UId="78" />
     </Symbol>
   </Access>
   <Token Text=";" UId="79" />
   <NewLine UId="80" />
   <Access Scope="LocalVariable" UId="81">
     <Symbol UId="82">
-      <Component Name="VAR_IF_VEN" UId="83" />
+      <Component Name="VAR_PMP" UId="83" />
       <Token Text="." UId="84" />
-      <Component Name="TYD_TOT_AAN" UId="85" />
+      <Component Name="PWR" UId="85" />
     </Symbol>
   </Access>
   <Blank UId="86" />
@@ -1733,16 +2065,16 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
     <Symbol UId="90">
       <Component Name="VAR" UId="91" />
       <Token Text="." UId="92" />
-      <Component Name="TYD_TOT_AAN" UId="93" />
+      <Component Name="PWR" UId="93" />
     </Symbol>
   </Access>
   <Token Text=";" UId="94" />
   <NewLine UId="95" />
   <Access Scope="LocalVariable" UId="96">
     <Symbol UId="97">
-      <Component Name="VAR_IF_VEN" UId="98" />
+      <Component Name="VAR_PMP" UId="98" />
       <Token Text="." UId="99" />
-      <Component Name="TYD_TOT_AAN_UUR" UId="100" />
+      <Component Name="TYD_TOT_AAN" UId="100" />
     </Symbol>
   </Access>
   <Blank UId="101" />
@@ -1752,16 +2084,16 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
     <Symbol UId="105">
       <Component Name="VAR" UId="106" />
       <Token Text="." UId="107" />
-      <Component Name="TYD_TOT_AAN_UUR" UId="108" />
+      <Component Name="TYD_TOT_AAN" UId="108" />
     </Symbol>
   </Access>
   <Token Text=";" UId="109" />
   <NewLine UId="110" />
   <Access Scope="LocalVariable" UId="111">
     <Symbol UId="112">
-      <Component Name="VAR_IF_VEN" UId="113" />
+      <Component Name="VAR_PMP" UId="113" />
       <Token Text="." UId="114" />
-      <Component Name="ENE_MWA1" UId="115" />
+      <Component Name="TYD_AAN" UId="115" />
     </Symbol>
   </Access>
   <Blank UId="116" />
@@ -1771,16 +2103,16 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
     <Symbol UId="120">
       <Component Name="VAR" UId="121" />
       <Token Text="." UId="122" />
-      <Component Name="ENE_MWA1" UId="123" />
+      <Component Name="TYD_AAN" UId="123" />
     </Symbol>
   </Access>
   <Token Text=";" UId="124" />
   <NewLine UId="125" />
   <Access Scope="LocalVariable" UId="126">
     <Symbol UId="127">
-      <Component Name="VAR_IF_VEN" UId="128" />
+      <Component Name="VAR_PMP" UId="128" />
       <Token Text="." UId="129" />
-      <Component Name="ENE_MWA2" UId="130" />
+      <Component Name="TYD_UIT" UId="130" />
     </Symbol>
   </Access>
   <Blank UId="131" />
@@ -1790,104 +2122,11 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
     <Symbol UId="135">
       <Component Name="VAR" UId="136" />
       <Token Text="." UId="137" />
-      <Component Name="ENE_MWA2" UId="138" />
+      <Component Name="TYD_UIT" UId="138" />
     </Symbol>
   </Access>
   <Token Text=";" UId="139" />
   <NewLine UId="140" />
-  <Access Scope="LocalVariable" UId="141">
-    <Symbol UId="142">
-      <Component Name="VAR_IF_VEN" UId="143" />
-      <Token Text="." UId="144" />
-      <Component Name="ENE_MWA3" UId="145" />
-    </Symbol>
-  </Access>
-  <Blank UId="146" />
-  <Token Text=":=" UId="147" />
-  <Blank UId="148" />
-  <Access Scope="LocalVariable" UId="149">
-    <Symbol UId="150">
-      <Component Name="VAR" UId="151" />
-      <Token Text="." UId="152" />
-      <Component Name="ENE_MWA3" UId="153" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="154" />
-  <NewLine UId="155" />
-  <Access Scope="LocalVariable" UId="156">
-    <Symbol UId="157">
-      <Component Name="VAR_IF_VEN" UId="158" />
-      <Token Text="." UId="159" />
-      <Component Name="TRL_MWA" UId="160" />
-    </Symbol>
-  </Access>
-  <Blank UId="161" />
-  <Token Text=":=" UId="162" />
-  <Blank UId="163" />
-  <Access Scope="LocalVariable" UId="164">
-    <Symbol UId="165">
-      <Component Name="VAR" UId="166" />
-      <Token Text="." UId="167" />
-      <Component Name="TRL_MWA" UId="168" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="169" />
-  <NewLine UId="170" />
-  <Access Scope="LocalVariable" UId="171">
-    <Symbol UId="172">
-      <Component Name="VAR_IF_VEN" UId="173" />
-      <Token Text="." UId="174" />
-      <Component Name="EXT_AUT" UId="175" />
-    </Symbol>
-  </Access>
-  <Blank UId="176" />
-  <Token Text=":=" UId="177" />
-  <Blank UId="178" />
-  <Access Scope="LocalVariable" UId="179">
-    <Symbol UId="180">
-      <Component Name="VAR" UId="181" />
-      <Token Text="." UId="182" />
-      <Component Name="EXT_AUT" UId="183" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="184" />
-  <NewLine UId="185" />
-  <Access Scope="LocalVariable" UId="186">
-    <Symbol UId="187">
-      <Component Name="VAR_IF_VEN" UId="188" />
-      <Token Text="." UId="189" />
-      <Component Name="EXT_HW" UId="190" />
-    </Symbol>
-  </Access>
-  <Blank UId="191" />
-  <Token Text=":=" UId="192" />
-  <Blank UId="193" />
-  <Access Scope="LocalVariable" UId="194">
-    <Symbol UId="195">
-      <Component Name="VAR" UId="196" />
-      <Token Text="." UId="197" />
-      <Component Name="EXT_HW" UId="198" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="199" />
-  <NewLine UId="200" />
-  <Access Scope="LocalVariable" UId="201">
-    <Symbol UId="202">
-      <Component Name="VAR_IF_VEN" UId="203" />
-      <Token Text="." UId="204" />
-      <Component Name="STO" UId="205" />
-    </Symbol>
-  </Access>
-  <Blank UId="206" />
-  <Token Text=":=" UId="207" />
-  <Blank UId="208" />
-  <Access Scope="LocalVariable" UId="209">
-    <Symbol UId="210">
-      <Component Name="STO" UId="211" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="212" />
-  <NewLine UId="213" />
 </StructuredText></NetworkSource>
           <ProgrammingLanguage>SCL</ProgrammingLanguage>
         </AttributeList>
@@ -1937,7 +2176,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
           <MultilingualTextItem ID="8B" CompositionName="Items">
             <AttributeList>
               <Culture>nl-BE</Culture>
-              <Text>TYPIC_C301_IF_VEN: Ventilator</Text>
+              <Text>TYPIC_C904_SF_PMP: pomp</Text>
             </AttributeList>
           </MultilingualTextItem>
         </ObjectList>

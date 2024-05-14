@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="STS_AAN" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Pomp draait</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="BMO_HAND" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Pomp in hand geschakeld</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TYD_TOT_AAN" Datatype="LInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Totaal aantal draaiuren (in seconden)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TYD_TOT_AAN_UUR" Datatype="LInt">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Totaal aantal draaiuren (in uren)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TYD_AAN" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Aantal seconden dat pomp aangeschakeld is</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TYD_UIT" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Aantal seconden dat pomp uitgeschakeld is</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ENE_MWA1" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Stroommeting fase 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ENE_MWA2" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Stroommeting fase 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ENE_MWA3" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Stroommeting fase 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EXT_HW" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Sturings hardware (PLC) in storing</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="STO" Datatype="Struct">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Opsomming van alle storingen</MultiLanguageText>
+      </Comment>
+      <Member Name="A001" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Beveiliging aangesproken</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A002" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing van de motorbeveiliging van de pomp</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A003" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Storing softstarter</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A004" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Te hoge temperatuur in de motorwikkelingen</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A005" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De pomp is in onbalans</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A006" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Motorlade uitgeschakeld</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A007" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Motorlade in test</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A008" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Motorlade uitgereden</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A009" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Fout stroommeting fase 1</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A010" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Fout stroommeting fase 2</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A011" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Fout stroommeting fase 3</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A012" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Filter vervuild</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT01" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Discordantie motor: terugmelding niet ontvangen</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="AT02" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Discordantie motor: terugmelding blijft aanwezig</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="M001" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Werkschakelaar uitgeschakeld</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="M002" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Melding: Pomp heeft te lang niet gedraaid. Periodiek onderhoud nodig</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="M003" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Melding: Draaitijd overschrijding</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>C501_VAR_IF_BBP_TYPIC</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>nl-BE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

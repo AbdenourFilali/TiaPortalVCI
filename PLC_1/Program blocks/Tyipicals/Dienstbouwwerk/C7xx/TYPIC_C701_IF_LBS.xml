@@ -5,207 +5,257 @@
     <AttributeList>
       <HeaderAuthor>OCOTECH</HeaderAuthor>
       <HeaderFamily>Typical</HeaderFamily>
-      <HeaderName>C301.701</HeaderName>
+      <HeaderName>C701.702</HeaderName>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="Input">
-    <Member Name="PULS_100ms" Datatype="Bool">
+    <Member Name="STU_IF_LBS_CMD" Datatype="USInt">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Puls, 1 PLC-cyclus hoog, 1 keer per 100 ms</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Sturing van de interne functie klimaatregeling (IF), luchtgroep</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="PULS_1s" Datatype="Bool">
+    <Member Name="IN_DME_PU" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Puls, 1 PLC-cyclus hoog, 1 keer per seconde</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Drukmeting in pulsie kanaal</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="EXT_AUT" Datatype="Bool">
+    <Member Name="IN_DME_EX" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Externe (hoofd) beveiliging (1 = OK)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Drukmeting in extractie kanaal</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="EXT_HW" Datatype="Bool">
+    <Member Name="IN_TME_PU" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturings hardware (PLC) bewaking (1 = OK)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Temperatuurmeting in pulsie kanaal</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_HND" Datatype="Bool">
+    <Member Name="IN_TME_EX" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Terugmelding aansturing via hand (hardware)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Temperatuurmeting in extractie kanaal</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_POS" Datatype="Bool">
+    <Member Name="IN_TME_BU" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Terugmelding aansturing in rijrichting</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Temperatuurmeting buiten</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_NEG" Datatype="Bool">
+    <Member Name="IN_VEN_PU" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Terugmelding aansturing tegenrijrichting</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Status pulsie ventilator (on/off)</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_AUT" Datatype="Bool">
+    <Member Name="IN_VEN_PU_FB" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Status thermische beveiliging (1 = OK)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Feedback snelheid pulsie ventilator</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_PTC" Datatype="Bool">
+    <Member Name="IN_VEN_PU_AUT" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Detectie hoge temperatuur in de motorwikkelingen (1 = OK)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Status thermische beveiliging pulsie ventilator (1 = OK)</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_TRL" Datatype="Word">
+    <Member Name="IN_VEN_PU_SCW" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Detectie trillingen (onbalans)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Werkschakelaar pulsie ventilator (1 = Aan)</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_SCW" Datatype="Bool">
+    <Member Name="IN_VEN_EX" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Werkschakelaar (1 = AAN)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Status extractie ventilator (on/off)</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_STO" Datatype="Bool">
+    <Member Name="IN_VEN_EX_FB" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Storingsmelding MCC (1 = OK)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Feedback snelheid extractie ventilator</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_STS1" Datatype="Bool">
+    <Member Name="IN_VEN_EX_AUT" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Status motorlade in (1 = Ingeschakeld )</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Status thermische beveiliging extractie ventilator (1 = OK)</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_STS2" Datatype="Bool">
+    <Member Name="IN_VEN_EX_SCW" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Status motorlade in test (1 = In Test)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Werkschakelaar extractie ventilator (1 = Aan)</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_STS3" Datatype="Bool">
+    <Member Name="IN_KLR_KOB" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Status motorlade uitgereden (1 = Uitgereden)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Feedback stand 2weg klep koelbatterij</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_STR1" Datatype="Real">
+    <Member Name="IN_KLR_VEB" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Analoge meting ventilator fasestroom 1</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Feedback stand 3weg klep verwarmingsbatterij</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_STR2" Datatype="Real">
+    <Member Name="IN_KLR_PU" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Analoge meting ventilator fasestroom 2</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Terugmelding stand open/dicht register verse lucht</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="IN_STR3" Datatype="Real">
+    <Member Name="IN_KLR_EX" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Analoge meting ventilator fasestroom 3</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Terugmelding stand open/dicht register extractie</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="CFG_2RI" Datatype="Bool">
+    <Member Name="IN_KLR" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">TRUE = Ventilator kan in twee richtingen draaien (i.p.v. enkel een richting)</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Terugmelding stand mengregister</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="CFG_UTYD" Datatype="Time">
+    <Member Name="IN_AVR" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Omschakeltijd, tijd die nodig is om uit te bollen in een richting vooraleer de andere richting gestart mag worden.</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Antivries schakelaar (1 = OK)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="IN_DME_FI_VL" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Drukverschilmeting filter verse lucht (1 = OK)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="IN_DME_FI_EX" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Drukverschilmeting filter extractie (1 = OK)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="IN_WMW" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Terugmelding status warmtewiel (Aan / Uit)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="IN_WMW_STO" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Fout warmtewiel (1 = OK)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="IN_BME" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Rookmelder (1 = OK)</MultiLanguageText>
       </Comment>
     </Member>
     <Member Name="CFG_TYD_FB" Datatype="Time">
@@ -218,49 +268,9 @@
         <MultiLanguageText Lang="nl-BE">Vertragingstijd storing foute terugmelding</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="CFG_TYD_TRL" Datatype="Time">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Vertragingstijd storing onbalans</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="CFG_TRL_MAX" Datatype="Real">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Hoogste waarde scalering trillingsmeting</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="CFG_TRL_MIN" Datatype="Real">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Laagste waarde scalering trillingsmeting</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="CFG_TRL_HOOG" Datatype="Real">
-      <AttributeList>
-        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
-      </AttributeList>
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Schakeldrempel hoog trillingsmeting (onbalans)</MultiLanguageText>
-      </Comment>
-    </Member>
   </Section>
   <Section Name="Output">
-    <Member Name="VAR_IF_VEN" Datatype="&quot;C301_VAR_IF_VEN_TYPIC&quot;">
+    <Member Name="VAR_IF_LBS" Datatype="&quot;C701_VAR_IF_LBS_TYPIC&quot;">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
@@ -270,50 +280,140 @@
         <MultiLanguageText Lang="nl-BE">Struct met alle variabelen naar bovenliggende functies</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="OUT_POS" Datatype="Bool">
+    <Member Name="OUT_VEN_PU_VGV" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Aansturen contactor rijrichting</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Vrijgave pulsie ventilator</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="OUT_NEG" Datatype="Bool">
+    <Member Name="OUT_VEN_PU_SNE" Datatype="Real">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Aansturen contactor tegenrij</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Snelheid pulsie ventilator</MultiLanguageText>
       </Comment>
     </Member>
-    <Member Name="OUT_RES" Datatype="Bool">
+    <Member Name="OUT_VEN_EX_VGV" Datatype="Bool">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Reset van de motorlade storingen</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Vrijgave extractie ventilator</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OUT_VEN_EX_SNE" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Snelheid extractie ventilator</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OUT_KLR_KOB" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Aansturing klep koelbatterij</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OUT_KLR_VEB" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Aansturing klep verwarmingsbatterij</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OUT_KLR_VL" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Damper verse lucht sturing</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OUT_KLR_EX" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Damper extractie lucht sturing</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OUT_KLR" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Aansturing positie mengregister</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OUT_WMW" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Aansturing recuperatie warmtewisselaar</MultiLanguageText>
       </Comment>
     </Member>
   </Section>
   <Section Name="InOut">
-    <Member Name="STU_IF_VEN" Datatype="&quot;C301_STU_IF_VEN_TYPIC&quot;">
-      <Comment>
-        <MultiLanguageText Lang="nl-BE">Struct met alle sturingen van de subfunctie (SF) calamiteitendoorsteek van 3B</MultiLanguageText>
-      </Comment>
-    </Member>
-    <Member Name="STU_VGV_VEN_AAN" Datatype="Bool">
+    <Member Name="STU_VGV_PMP_AAN" Datatype="Bool">
       <Comment>
         <MultiLanguageText Lang="nl-BE">Vrijgave inschakelen</MultiLanguageText>
       </Comment>
     </Member>
   </Section>
   <Section Name="Static">
+    <Member Name="BED" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="nl-BE">Bedieningen</MultiLanguageText>
+      </Comment>
+      <Member Name="REM" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Bediening om luchtgroep in remote te schakelen</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="NORMAAL" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Bediening om luchtgroep in regime Normaal te schakelen</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="RECIRCULATIE" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Bediening om luchtgroep in regime Recirculatie te schakelen</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="UIT" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Bediening om luchtgroep in regime Uit te schakelen</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
     <Member Name="STO" Datatype="Struct">
       <AttributeList>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
@@ -323,82 +423,72 @@
       </Comment>
       <Member Name="A001" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Beveiliging aangesproken</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Storing van de motorbeveiliging van pulsie ventilator</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A002" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Algemene storing MCC</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Storing van de motorbeveiliging van extractie ventilator</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A003" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Te hoge temperatuur in de wikkelingen van de motor van de ventilator</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Fout drukmeting pulsie</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A004" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">De ventilator is in onbalans</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Fout drukmeting extractie</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A005" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Fout stroommeting fase 1</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Fout temperatuurmeting pulsie</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A006" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Fout stroommeting fase 2</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Fout temperatuurmeting extractie</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A007" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Fout stroommeting fase 3</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Fout temperatuurmeting buitenlucht</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A008" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Motorlade uitgeschakeld</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Antivries alarm</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A009" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Motorlade in test</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Filter vuil verse lucht</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="A010" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Motorlade uitgereden</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="A011" Datatype="Bool">
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">Draadbreuk trillingsmeting</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="A012" Datatype="Bool">
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">Meetbereik trillingsmeting overschreden</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Filter vuil extractie lucht</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="AT01" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Discordantie motor: terugmelding niet ontvangen</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Foute terugmelding: damper verse lucht aangestuurd, terugmelding niet (of te laat) ontvangen</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="AT02" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Discordantie motor: terugmelding blijft aanwezig</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="AT03" Datatype="Bool">
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">Discordantie motor: terugmeldingen Positief en negatief tegelijkertijd</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Foute terugmelding: damper extractie lucht aangestuurd, terugmelding niet (of te laat) ontvangen</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="M001" Datatype="Bool">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Werkschakelaar uitgeschakeld</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">De pulsie ventilator is afgekoppeld via de werkschakelaar</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="M002" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">De extractie ventilator is afgekoppeld via de werkschakelaar</MultiLanguageText>
         </Comment>
       </Member>
     </Member>
@@ -409,31 +499,113 @@
       <Comment>
         <MultiLanguageText Lang="nl-BE">Variabelen</MultiLanguageText>
       </Comment>
-      <Member Name="STS_AAN" Datatype="Bool">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
+      <Member Name="PID_P_PU" Datatype="Real">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">TRUE = Ventilator is aangestuurd FALSE = Uit</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">P factor van PID regeling voor pulsie ventilator</MultiLanguageText>
         </Comment>
       </Member>
-      <Member Name="DIR_POS" Datatype="Bool">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
+      <Member Name="PID_I_PU" Datatype="Time">
         <Comment>
-          <MultiLanguageText Lang="nl-BE">TRUE = Ventilator draait in positieve richting (rijrichting)</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Integratietijd van PID regeling voor pulsie ventilator</MultiLanguageText>
         </Comment>
       </Member>
-      <Member Name="DIR_NEG" Datatype="Bool">
+      <Member Name="PID_D_PU" Datatype="Time">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">D actie van PID regeling voor pulsie ventilator</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="PID_P_EX" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">P factor van PID regeling voor extractie ventilator</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="PID_I_EX" Datatype="Time">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Integratietijd van PID regeling voor extractie ventilator</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="PID_D_EX" Datatype="Time">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">D actie van PID regeling voor extractie ventilator</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="PID_P_KOB" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">P factor van PID regeling voor klep van koelbatterij</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="PID_I_KOB" Datatype="Time">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Integratietijd van PID regeling voor klep van koelbatterij</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="PID_D_KOB" Datatype="Time">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">D actie van PID regeling voor klep van koelbatterij</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="PID_P_VEB" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">P factor van PID regeling voor klep van verwarmingsbatterij</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="PID_I_VEB" Datatype="Time">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Integratietijd van PID regeling voor klep van verwarmingsbatterij</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="PID_D_VEB" Datatype="Time">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">D actie van PID regeling voor klep van verwarmingsbatterij</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="SWA_D_PU" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Setpunt druk pulsie kanaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="SWA_D_EX" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Setpunt druk extractie kanaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="SWA_T_PU" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Setpunt temperatuur pulsie</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="DME_PU" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Drukmeting pulsie kanaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="DME_EX" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Drukmeting extractie kanaal</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="TME_PU" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Temperatuurmeting in pulsie</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="TME_EX" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Temperatuurmeting in extractie</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="TME_BU" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="nl-BE">Temperatuurmeting buitenlucht</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="WRE" Datatype="USInt">
         <AttributeList>
           <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
           <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         </AttributeList>
         <Comment>
-          <MultiLanguageText Lang="nl-BE">TRUE = Ventilator draait in negatieve richting (tegenrij)</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Werkingsregime</MultiLanguageText>
         </Comment>
       </Member>
       <Member Name="BMO_HAND" Datatype="Bool">
@@ -442,79 +614,34 @@
           <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         </AttributeList>
         <Comment>
-          <MultiLanguageText Lang="nl-BE">TRUE = Ventilator in hand geschakeld FALSE = niet in hand</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">TRUE = Werkingsregime is handmatig ingesteld via lokale bediening</MultiLanguageText>
         </Comment>
       </Member>
-      <Member Name="TYD_TOT_AAN" Datatype="LInt">
+      <Member Name="Vrijgave pomp verwarmingsbat" Datatype="Bool">
         <AttributeList>
           <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
           <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         </AttributeList>
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Totaal aantal draaiuren</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Gaat naar if verwarmingskring CHECKEN OF DEZE POMP NU HIER INZIT OF IN DE KRING</MultiLanguageText>
         </Comment>
       </Member>
-      <Member Name="TYD_TOT_AAN_UUR" Datatype="LInt">
+      <Member Name="REQ_VE" Datatype="Bool">
         <AttributeList>
           <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
           <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         </AttributeList>
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Totaal aantal draaiuren</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Warmtevraag voor kring verwarmingsbatterijen</MultiLanguageText>
         </Comment>
       </Member>
-      <Member Name="ENE_MWA1" Datatype="Real">
+      <Member Name="REQ_KO" Datatype="Bool">
         <AttributeList>
           <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
           <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
         </AttributeList>
         <Comment>
-          <MultiLanguageText Lang="nl-BE">Stroommeting fase 1</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="ENE_MWA2" Datatype="Real">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">Stroommeting fase 2</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="ENE_MWA3" Datatype="Real">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">Stroommeting fase 3</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="TRL_MWA" Datatype="Real">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">Trillingsmeting</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="EXT_AUT" Datatype="Bool">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">Externe (hoofd) beveiliging aangesproken</MultiLanguageText>
-        </Comment>
-      </Member>
-      <Member Name="EXT_HW" Datatype="Bool">
-        <AttributeList>
-          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
-          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
-        </AttributeList>
-        <Comment>
-          <MultiLanguageText Lang="nl-BE">Sturings hardware (PLC) in storing</MultiLanguageText>
+          <MultiLanguageText Lang="nl-BE">Koelvraag voor kring koelbatterijen (luchtgroep)</MultiLanguageText>
         </Comment>
       </Member>
     </Member>
@@ -524,9 +651,9 @@
 </Sections></Interface>
       <MemoryLayout>Optimized</MemoryLayout>
       <MemoryReserve>10</MemoryReserve>
-      <Name>TYPIC_C301_IF_VEN</Name>
+      <Name>TYPIC_C701_IF_LBS</Name>
       <Namespace />
-      <Number>33</Number>
+      <Number>83</Number>
       <ProgrammingLanguage>FBD</ProgrammingLanguage>
       <SetENOAutomatically>false</SetENOAutomatically>
     </AttributeList>
@@ -542,15 +669,9 @@
           <MultilingualTextItem ID="3" CompositionName="Items">
             <AttributeList>
               <Culture>nl-BE</Culture>
-              <Text>Logisch Object Besturing: C301.701
+              <Text>Logisch Object Besturing: C701.702
 
-De interne functie ventilator verzorgt de interne besturing, bewaking en fysieke aansturing van een aan/uit ventilator.
-
-Een langsventilator heeft 2 mogelijke draairichtingen:
- Rijrichting
- Tegenrij
-Een ingangsventilator heeft 1 mogelijke draairichting:
- Rijrichting
+De interne functie Luchtbehandelingssysteem verzorgt de interne besturing, bewaking en fysieke aansturing van de luchtgroep behorend tot de klimaatinstallatie.
 </Text>
             </AttributeList>
           </MultilingualTextItem>
@@ -613,7 +734,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="E" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Inlezen van de 3 stroommetingen van iedere fase van de motor en inlezen van de trillingsmeting.</Text>
+                  <Text>inlezen van de temperatuur en drukken.</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -653,7 +774,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="15" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Verwerken van de storingsmeldingen (inputs).</Text>
+                  <Text>aanmaken van de storingen en meldingen.</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -669,7 +790,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="18" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text> +++  Storingen  +++</Text>
+                  <Text> +++  Storingen en meldingen  +++</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -737,7 +858,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="1F" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A001: Beveiliging aangesproken</Text>
+                  <Text>Storing A001: Storing van de motorbeveiliging van pulsie ventilator</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -805,7 +926,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="26" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A002: Algemene storing MCC</Text>
+                  <Text>Storing A002: Storing van de motorbeveiliging van extractie ventilator</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -873,7 +994,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="2D" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A003: Te hoge temperatuur in de wikkelingen van de motor van de ventilator</Text>
+                  <Text>Storing A003: Fout drukmeting pulsie</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -941,7 +1062,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="34" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A004: De ventilator is in onbalans</Text>
+                  <Text>Storing A004: Fout drukmeting extractie</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1009,7 +1130,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="3B" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A005: Fout stroommeting fase 1</Text>
+                  <Text>Storing A005: Fout temperatuurmeting pulsie</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1077,7 +1198,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="42" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A006: Fout stroommeting fase 2</Text>
+                  <Text>Storing A006: Fout temperatuurmeting extractie</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1145,7 +1266,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="49" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A007: Fout stroommeting fase 3</Text>
+                  <Text>Storing A007: Fout temperatuurmeting buitenlucht</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1213,7 +1334,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="50" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A008: Motorlade uitgeschakeld</Text>
+                  <Text>Storing A008: Antivries alarm</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1281,7 +1402,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="57" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A009: Motorlade in test</Text>
+                  <Text>Storing A009: Filter vuil verse lucht</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1349,7 +1470,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="5E" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A010: Motorlade uitgereden</Text>
+                  <Text>Storing A010: Filter vuil extractie lucht</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1369,7 +1490,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
     <Access Scope="LocalVariable" UId="22">
       <Symbol>
         <Component Name="STO" />
-        <Component Name="A011" />
+        <Component Name="M001" />
       </Symbol>
     </Access>
     <Part Name="Coil" UId="23">
@@ -1417,7 +1538,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="65" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A011: Draadbreuk trillingsmeting</Text>
+                  <Text>Melding M001: De pulsie ventilator is afgekoppeld via de werkschakelaar</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1437,7 +1558,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
     <Access Scope="LocalVariable" UId="22">
       <Symbol>
         <Component Name="STO" />
-        <Component Name="A012" />
+        <Component Name="M002" />
       </Symbol>
     </Access>
     <Part Name="Coil" UId="23">
@@ -1485,7 +1606,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="6C" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Storing A012: Meetbereik trillingsmeting overschreden</Text>
+                  <Text>Melding M002: De extractie ventilator is afgekoppeld via de werkschakelaar </Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1494,35 +1615,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="6D" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
-  <Parts>
-    <Access Scope="LiteralConstant" UId="21">
-      <Constant>
-        <ConstantType>Bool</ConstantType>
-        <ConstantValue>1</ConstantValue>
-      </Constant>
-    </Access>
-    <Access Scope="LocalVariable" UId="22">
-      <Symbol>
-        <Component Name="STO" />
-        <Component Name="M001" />
-      </Symbol>
-    </Access>
-    <Part Name="Coil" UId="23">
-      <Negated Name="in" />
-    </Part>
-  </Parts>
-  <Wires>
-    <Wire UId="24">
-      <IdentCon UId="21" />
-      <NameCon UId="23" Name="in" />
-    </Wire>
-    <Wire UId="25">
-      <IdentCon UId="22" />
-      <NameCon UId="23" Name="operand" />
-    </Wire>
-  </Wires>
-</FlgNet></NetworkSource>
+          <NetworkSource />
           <ProgrammingLanguage>FBD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -1537,7 +1630,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="70" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text />
+                  <Text>PID regelingen voor luchtdebiet en temperatuur.</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1553,7 +1646,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="73" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Melding M001: Werkschakelaar uitgeschakeld </Text>
+                  <Text> +++  Regelingen  +++</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1577,7 +1670,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="77" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Aansturen en bewaking van de motor.</Text>
+                  <Text>aansturingen bepaalt door de uitgangen van de PID regelaars.</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1593,7 +1686,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="7A" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text> +++  Motorsturing  +++</Text>
+                  <Text> +++  Sturingen  +++</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1602,8 +1695,121 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="7B" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource />
-          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Access Scope="LocalVariable" UId="21">
+    <Symbol UId="22">
+      <Component Name="VAR_IF_LBS" UId="23" />
+      <Token Text="." UId="24" />
+      <Component Name="WRE" UId="25" />
+    </Symbol>
+  </Access>
+  <Blank UId="26" />
+  <Token Text=":=" UId="27" />
+  <Blank UId="28" />
+  <Access Scope="LocalVariable" UId="29">
+    <Symbol UId="30">
+      <Component Name="VAR" UId="31" />
+      <Token Text="." UId="32" />
+      <Component Name="WRE" UId="33" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="34" />
+  <NewLine UId="35" />
+  <Access Scope="LocalVariable" UId="36">
+    <Symbol UId="37">
+      <Component Name="VAR_IF_LBS" UId="38" />
+      <Token Text="." UId="39" />
+      <Component Name="BMO_HAND" UId="40" />
+    </Symbol>
+  </Access>
+  <Blank UId="41" />
+  <Token Text=":=" UId="42" />
+  <Blank UId="43" />
+  <Access Scope="LocalVariable" UId="44">
+    <Symbol UId="45">
+      <Component Name="VAR" UId="46" />
+      <Token Text="." UId="47" />
+      <Component Name="BMO_HAND" UId="48" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="49" />
+  <NewLine UId="50" />
+  <Access Scope="LocalVariable" UId="51">
+    <Symbol UId="52">
+      <Component Name="VAR_IF_LBS" UId="53" />
+      <Token Text="." UId="54" />
+      <Component Name="Vrijgave pomp verwarmingsbat" UId="55" />
+    </Symbol>
+  </Access>
+  <Blank UId="56" />
+  <Token Text=":=" UId="57" />
+  <Blank UId="58" />
+  <Access Scope="LocalVariable" UId="59">
+    <Symbol UId="60">
+      <Component Name="VAR" UId="61" />
+      <Token Text="." UId="62" />
+      <Component Name="Vrijgave pomp verwarmingsbat" UId="63" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="64" />
+  <NewLine UId="65" />
+  <Access Scope="LocalVariable" UId="66">
+    <Symbol UId="67">
+      <Component Name="VAR_IF_LBS" UId="68" />
+      <Token Text="." UId="69" />
+      <Component Name="REQ_VE" UId="70" />
+    </Symbol>
+  </Access>
+  <Blank UId="71" />
+  <Token Text=":=" UId="72" />
+  <Blank UId="73" />
+  <Access Scope="LocalVariable" UId="74">
+    <Symbol UId="75">
+      <Component Name="VAR" UId="76" />
+      <Token Text="." UId="77" />
+      <Component Name="REQ_VE" UId="78" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="79" />
+  <NewLine UId="80" />
+  <Access Scope="LocalVariable" UId="81">
+    <Symbol UId="82">
+      <Component Name="VAR_IF_LBS" UId="83" />
+      <Token Text="." UId="84" />
+      <Component Name="REQ_KO" UId="85" />
+    </Symbol>
+  </Access>
+  <Blank UId="86" />
+  <Token Text=":=" UId="87" />
+  <Blank UId="88" />
+  <Access Scope="LocalVariable" UId="89">
+    <Symbol UId="90">
+      <Component Name="VAR" UId="91" />
+      <Token Text="." UId="92" />
+      <Component Name="REQ_KO" UId="93" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="94" />
+  <NewLine UId="95" />
+  <Access Scope="LocalVariable" UId="96">
+    <Symbol UId="97">
+      <Component Name="VAR_IF_LBS" UId="98" />
+      <Token Text="." UId="99" />
+      <Component Name="STO" UId="100" />
+    </Symbol>
+  </Access>
+  <Blank UId="101" />
+  <Token Text=":=" UId="102" />
+  <Blank UId="103" />
+  <Access Scope="LocalVariable" UId="104">
+    <Symbol UId="105">
+      <Component Name="STO" UId="106" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="107" />
+  <NewLine UId="108" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="7C" CompositionName="Comment">
@@ -1617,7 +1823,7 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="7E" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text>Tellen van de tijdsduur dat motor draait of stilstaat.</Text>
+                  <Text>Variabelen van intern scada rakvlak naar outputs copieren</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -1633,292 +1839,6 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
               <MultilingualTextItem ID="81" CompositionName="Items">
                 <AttributeList>
                   <Culture>nl-BE</Culture>
-                  <Text> +++  Urentellers  +++</Text>
-                </AttributeList>
-              </MultilingualTextItem>
-            </ObjectList>
-          </MultilingualText>
-        </ObjectList>
-      </SW.Blocks.CompileUnit>
-      <SW.Blocks.CompileUnit ID="82" CompositionName="CompileUnits">
-        <AttributeList>
-          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
-  <Access Scope="LocalVariable" UId="21">
-    <Symbol UId="22">
-      <Component Name="VAR_IF_VEN" UId="23" />
-      <Token Text="." UId="24" />
-      <Component Name="STS_AAN" UId="25" />
-    </Symbol>
-  </Access>
-  <Blank UId="26" />
-  <Token Text=":=" UId="27" />
-  <Blank UId="28" />
-  <Access Scope="LocalVariable" UId="29">
-    <Symbol UId="30">
-      <Component Name="VAR" UId="31" />
-      <Token Text="." UId="32" />
-      <Component Name="STS_AAN" UId="33" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="34" />
-  <NewLine UId="35" />
-  <Access Scope="LocalVariable" UId="36">
-    <Symbol UId="37">
-      <Component Name="VAR_IF_VEN" UId="38" />
-      <Token Text="." UId="39" />
-      <Component Name="DIR_POS" UId="40" />
-    </Symbol>
-  </Access>
-  <Blank UId="41" />
-  <Token Text=":=" UId="42" />
-  <Blank UId="43" />
-  <Access Scope="LocalVariable" UId="44">
-    <Symbol UId="45">
-      <Component Name="VAR" UId="46" />
-      <Token Text="." UId="47" />
-      <Component Name="DIR_POS" UId="48" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="49" />
-  <NewLine UId="50" />
-  <Access Scope="LocalVariable" UId="51">
-    <Symbol UId="52">
-      <Component Name="VAR_IF_VEN" UId="53" />
-      <Token Text="." UId="54" />
-      <Component Name="DIR_NEG" UId="55" />
-    </Symbol>
-  </Access>
-  <Blank UId="56" />
-  <Token Text=":=" UId="57" />
-  <Blank UId="58" />
-  <Access Scope="LocalVariable" UId="59">
-    <Symbol UId="60">
-      <Component Name="VAR" UId="61" />
-      <Token Text="." UId="62" />
-      <Component Name="DIR_NEG" UId="63" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="64" />
-  <NewLine UId="65" />
-  <Access Scope="LocalVariable" UId="66">
-    <Symbol UId="67">
-      <Component Name="VAR_IF_VEN" UId="68" />
-      <Token Text="." UId="69" />
-      <Component Name="BMO_HAND" UId="70" />
-    </Symbol>
-  </Access>
-  <Blank UId="71" />
-  <Token Text=":=" UId="72" />
-  <Blank UId="73" />
-  <Access Scope="LocalVariable" UId="74">
-    <Symbol UId="75">
-      <Component Name="VAR" UId="76" />
-      <Token Text="." UId="77" />
-      <Component Name="BMO_HAND" UId="78" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="79" />
-  <NewLine UId="80" />
-  <Access Scope="LocalVariable" UId="81">
-    <Symbol UId="82">
-      <Component Name="VAR_IF_VEN" UId="83" />
-      <Token Text="." UId="84" />
-      <Component Name="TYD_TOT_AAN" UId="85" />
-    </Symbol>
-  </Access>
-  <Blank UId="86" />
-  <Token Text=":=" UId="87" />
-  <Blank UId="88" />
-  <Access Scope="LocalVariable" UId="89">
-    <Symbol UId="90">
-      <Component Name="VAR" UId="91" />
-      <Token Text="." UId="92" />
-      <Component Name="TYD_TOT_AAN" UId="93" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="94" />
-  <NewLine UId="95" />
-  <Access Scope="LocalVariable" UId="96">
-    <Symbol UId="97">
-      <Component Name="VAR_IF_VEN" UId="98" />
-      <Token Text="." UId="99" />
-      <Component Name="TYD_TOT_AAN_UUR" UId="100" />
-    </Symbol>
-  </Access>
-  <Blank UId="101" />
-  <Token Text=":=" UId="102" />
-  <Blank UId="103" />
-  <Access Scope="LocalVariable" UId="104">
-    <Symbol UId="105">
-      <Component Name="VAR" UId="106" />
-      <Token Text="." UId="107" />
-      <Component Name="TYD_TOT_AAN_UUR" UId="108" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="109" />
-  <NewLine UId="110" />
-  <Access Scope="LocalVariable" UId="111">
-    <Symbol UId="112">
-      <Component Name="VAR_IF_VEN" UId="113" />
-      <Token Text="." UId="114" />
-      <Component Name="ENE_MWA1" UId="115" />
-    </Symbol>
-  </Access>
-  <Blank UId="116" />
-  <Token Text=":=" UId="117" />
-  <Blank UId="118" />
-  <Access Scope="LocalVariable" UId="119">
-    <Symbol UId="120">
-      <Component Name="VAR" UId="121" />
-      <Token Text="." UId="122" />
-      <Component Name="ENE_MWA1" UId="123" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="124" />
-  <NewLine UId="125" />
-  <Access Scope="LocalVariable" UId="126">
-    <Symbol UId="127">
-      <Component Name="VAR_IF_VEN" UId="128" />
-      <Token Text="." UId="129" />
-      <Component Name="ENE_MWA2" UId="130" />
-    </Symbol>
-  </Access>
-  <Blank UId="131" />
-  <Token Text=":=" UId="132" />
-  <Blank UId="133" />
-  <Access Scope="LocalVariable" UId="134">
-    <Symbol UId="135">
-      <Component Name="VAR" UId="136" />
-      <Token Text="." UId="137" />
-      <Component Name="ENE_MWA2" UId="138" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="139" />
-  <NewLine UId="140" />
-  <Access Scope="LocalVariable" UId="141">
-    <Symbol UId="142">
-      <Component Name="VAR_IF_VEN" UId="143" />
-      <Token Text="." UId="144" />
-      <Component Name="ENE_MWA3" UId="145" />
-    </Symbol>
-  </Access>
-  <Blank UId="146" />
-  <Token Text=":=" UId="147" />
-  <Blank UId="148" />
-  <Access Scope="LocalVariable" UId="149">
-    <Symbol UId="150">
-      <Component Name="VAR" UId="151" />
-      <Token Text="." UId="152" />
-      <Component Name="ENE_MWA3" UId="153" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="154" />
-  <NewLine UId="155" />
-  <Access Scope="LocalVariable" UId="156">
-    <Symbol UId="157">
-      <Component Name="VAR_IF_VEN" UId="158" />
-      <Token Text="." UId="159" />
-      <Component Name="TRL_MWA" UId="160" />
-    </Symbol>
-  </Access>
-  <Blank UId="161" />
-  <Token Text=":=" UId="162" />
-  <Blank UId="163" />
-  <Access Scope="LocalVariable" UId="164">
-    <Symbol UId="165">
-      <Component Name="VAR" UId="166" />
-      <Token Text="." UId="167" />
-      <Component Name="TRL_MWA" UId="168" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="169" />
-  <NewLine UId="170" />
-  <Access Scope="LocalVariable" UId="171">
-    <Symbol UId="172">
-      <Component Name="VAR_IF_VEN" UId="173" />
-      <Token Text="." UId="174" />
-      <Component Name="EXT_AUT" UId="175" />
-    </Symbol>
-  </Access>
-  <Blank UId="176" />
-  <Token Text=":=" UId="177" />
-  <Blank UId="178" />
-  <Access Scope="LocalVariable" UId="179">
-    <Symbol UId="180">
-      <Component Name="VAR" UId="181" />
-      <Token Text="." UId="182" />
-      <Component Name="EXT_AUT" UId="183" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="184" />
-  <NewLine UId="185" />
-  <Access Scope="LocalVariable" UId="186">
-    <Symbol UId="187">
-      <Component Name="VAR_IF_VEN" UId="188" />
-      <Token Text="." UId="189" />
-      <Component Name="EXT_HW" UId="190" />
-    </Symbol>
-  </Access>
-  <Blank UId="191" />
-  <Token Text=":=" UId="192" />
-  <Blank UId="193" />
-  <Access Scope="LocalVariable" UId="194">
-    <Symbol UId="195">
-      <Component Name="VAR" UId="196" />
-      <Token Text="." UId="197" />
-      <Component Name="EXT_HW" UId="198" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="199" />
-  <NewLine UId="200" />
-  <Access Scope="LocalVariable" UId="201">
-    <Symbol UId="202">
-      <Component Name="VAR_IF_VEN" UId="203" />
-      <Token Text="." UId="204" />
-      <Component Name="STO" UId="205" />
-    </Symbol>
-  </Access>
-  <Blank UId="206" />
-  <Token Text=":=" UId="207" />
-  <Blank UId="208" />
-  <Access Scope="LocalVariable" UId="209">
-    <Symbol UId="210">
-      <Component Name="STO" UId="211" />
-    </Symbol>
-  </Access>
-  <Token Text=";" UId="212" />
-  <NewLine UId="213" />
-</StructuredText></NetworkSource>
-          <ProgrammingLanguage>SCL</ProgrammingLanguage>
-        </AttributeList>
-        <ObjectList>
-          <MultilingualText ID="83" CompositionName="Comment">
-            <ObjectList>
-              <MultilingualTextItem ID="84" CompositionName="Items">
-                <AttributeList>
-                  <Culture>en-US</Culture>
-                  <Text />
-                </AttributeList>
-              </MultilingualTextItem>
-              <MultilingualTextItem ID="85" CompositionName="Items">
-                <AttributeList>
-                  <Culture>nl-BE</Culture>
-                  <Text>Variabelen van intern scada rakvlak naar outputs copieren</Text>
-                </AttributeList>
-              </MultilingualTextItem>
-            </ObjectList>
-          </MultilingualText>
-          <MultilingualText ID="86" CompositionName="Title">
-            <ObjectList>
-              <MultilingualTextItem ID="87" CompositionName="Items">
-                <AttributeList>
-                  <Culture>en-US</Culture>
-                  <Text />
-                </AttributeList>
-              </MultilingualTextItem>
-              <MultilingualTextItem ID="88" CompositionName="Items">
-                <AttributeList>
-                  <Culture>nl-BE</Culture>
                   <Text>EINDE</Text>
                 </AttributeList>
               </MultilingualTextItem>
@@ -1926,18 +1846,18 @@ Een ingangsventilator heeft 1 mogelijke draairichting:
           </MultilingualText>
         </ObjectList>
       </SW.Blocks.CompileUnit>
-      <MultilingualText ID="89" CompositionName="Title">
+      <MultilingualText ID="82" CompositionName="Title">
         <ObjectList>
-          <MultilingualTextItem ID="8A" CompositionName="Items">
+          <MultilingualTextItem ID="83" CompositionName="Items">
             <AttributeList>
               <Culture>en-US</Culture>
               <Text />
             </AttributeList>
           </MultilingualTextItem>
-          <MultilingualTextItem ID="8B" CompositionName="Items">
+          <MultilingualTextItem ID="84" CompositionName="Items">
             <AttributeList>
               <Culture>nl-BE</Culture>
-              <Text>TYPIC_C301_IF_VEN: Ventilator</Text>
+              <Text>TYPIC_C701_IF_LBS: Luchtbehandelingssysteem</Text>
             </AttributeList>
           </MultilingualTextItem>
         </ObjectList>
