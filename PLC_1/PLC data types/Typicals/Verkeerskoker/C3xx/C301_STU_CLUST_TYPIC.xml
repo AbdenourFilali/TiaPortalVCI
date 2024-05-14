@@ -12,7 +12,7 @@
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
       <Comment>
-        <MultiLanguageText Lang="nl-BE">Sturing ventilatie algemeen</MultiLanguageText>
+        <MultiLanguageText Lang="nl-BE">Sturing ventilatie algemeené</MultiLanguageText>
       </Comment>
     </Member>
     <Member Name="CMD_DIR" Datatype="USInt">
